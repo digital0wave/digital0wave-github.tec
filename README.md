@@ -7,7 +7,7 @@ The lab hardware includes:
 • A thermoelectric cooler module • A temperature sensor 
 • A microprocessor controller(68HC12).
 
-![](doc/tec.jpg)
+![](doc/tec.JPG)
 
 
 ## Repo 
