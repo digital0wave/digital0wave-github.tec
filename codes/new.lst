@@ -1,0 +1,218 @@
+   1              	gcc2_compiled.:
+   2              	___gnu_compiled_cplusplus
+   3              		stabs "/home/elex8030/jseo/tec/",100,0,0,Ltext0
+   4              		stabs "new.cc",100,0,0,Ltext0
+   5              	
+   6              		section	.text
+   7              	
+   8              	Ltext0	stabs "int:t1=r1;-32768;32767;",128,0,0,0
+   9              		stabs "char:t2=r2;0;255;",128,0,0,0
+  10              		stabs "long int:t3=r1;0020000000000;0017777777777;",128,0,0,0
+  11              		stabs "unsigned int:t4=r4;0;65535;",128,0,0,0
+  12              		stabs "long unsigned int:t5=r1;0000000000000;0037777777777;",128,0,0,0
+  13              		stabs "long long int:t6=r1;0020000000000;0017777777777;",128,0,0,0
+  14              		stabs "long long unsigned int:t7=r1;0000000000000;0037777777777;",128,0,0,0
+  15              		stabs "short int:t8=r8;-32768;32767;",128,0,0,0
+  16              		stabs "short unsigned int:t9=r9;0;65535;",128,0,0,0
+  17              		stabs "signed char:t10=r10;-128;127;",128,0,0,0
+  18              		stabs "unsigned char:t11=r11;0;255;",128,0,0,0
+  19              		stabs "float:t12=r1;4;0;",128,0,0,0
+  20              		stabs "double:t13=r1;4;0;",128,0,0,0
+  21              		stabs "long double:t14=r1;4;0;",128,0,0,0
+  22              		stabs "complex int:t15=s4real:1,0,16;imag:1,16,16;;",128,0,0,0
+  23              		stabs "complex float:t16=r16;4;0;",128,0,0,0
+  24              		stabs "complex double:t17=r17;4;0;",128,0,0,0
+  25              		stabs "complex long double:t18=r18;4;0;",128,0,0,0
+  26              		stabs "bool:t19=@s8;-16;",128,0,0,0
+  27              		stabs "void:t20=20",128,0,0,0
+  28              		stabs "__wchar_t:t21=r21;-32768;32767;",128,0,0,0
+  29              		stabs "__vtbl_ptr_type:t22=*23=f1",128,0,0,0
+  30              		stabs "size_t:t4",128,0,5,0
+  31              		stabs "uint16:t4",128,0,6,0
+  32              		stabs "ulong32:t5",128,0,7,0
+  33              		stabs "ptrdiff_t:t1",128,0,8,0
+  34              	
+  35              		global	___builtin_vec_new
+  36              	___builtin_vec_new
+   1:new.cc        **** //ELEX8030 Lab2
+   2:new.cc        **** //new.cc
+   3:new.cc        **** //Jin won Seo
+   4:new.cc        **** #include "new.h"
+   5:new.cc        **** #include "malloc.h"
+   6:new.cc        **** 
+   7:new.cc        **** static void (*pHandler)(void);
+   8:new.cc        **** //custome memory allocation function new[]
+   9:new.cc        **** 
+  10:new.cc        **** void* operator new[](size_t size)
+  11:new.cc        **** {
+  37              		stabd 68,0,11
+  38              	
+  39              	
+  12:new.cc        **** 	void* vpMallloc = malloc(size);
+  40              	LBB2	stabd 68,0,12
+  41 0000 160000   		jsr	_malloc__FUi
+  13:new.cc        **** 	if(vpMallloc != NULL)
+  42              		stabd 68,0,13
+  43 0003 8C0000   		tstd	
+  44 0006 2607     		bne	L5
+  45              		
+  14:new.cc        **** 	{
+  15:new.cc        **** 		return vpMallloc;
+  16:new.cc        **** 	}else { //fail to allocate,error
+  17:new.cc        **** 		pHandler();
+  46              		stabd 68,0,17
+  47 0008 FD0000   		ldy	_pHandler
+  48 000b 1540     		jsr	0,y
+  18:new.cc        **** 		return NULL;
+  49              		stabd 68,0,18
+  50 000d 87C7     		clrd	
+  51              		stabd 68,0,15
+  52              	
+  53              	L5
+  19:new.cc        **** 	}
+  20:new.cc        **** }
+  54              	LBE2	stabd 68,0,20
+  55              	
+  56 000f 3D       		rts
+  57              	
+  58              		stabs "__builtin_vec_new:F24=*20",36,0,11,___builtin_vec_new
+  59              		stabs "size:P4",64,0,11,0
+  60              		stabs "vpMallloc:r24",64,0,12,0
+  61              		stabn 192,0,0,LBB2
+  62              		stabn 224,0,0,LBE2
+  63              	
+  64              	Lscope0	stabs "",36,0,0,Lscope0-___builtin_vec_new
+  65              	
+  66              		global	___builtin_vec_delete
+  67              	___builtin_vec_delete
+  21:new.cc        **** 
+  22:new.cc        **** void operator delete[](void* p)
+  23:new.cc        **** {
+  68              		stabd 68,0,23
+  69              	
+  70              	
+  24:new.cc        **** 	 free(p);
+  71              	LBB3	stabd 68,0,24
+  72 0010 160000   		jsr	_free__FPv
+  73              	
+  25:new.cc        **** }
+  74              	LBE3	stabd 68,0,25
+  75              	
+  76 0013 3D       		rts
+  77              	
+  78              		stabs "__builtin_vec_delete:F20",36,0,23,___builtin_vec_delete
+  79              		stabs "p:P24",64,0,23,0
+  80              		stabn 192,0,0,LBB3
+  81              		stabn 224,0,0,LBE3
+  82              	
+  83              	Lscope1	stabs "",36,0,0,Lscope1-___builtin_vec_delete
+  84              	
+  85              		global	___builtin_new
+  86              	___builtin_new
+  26:new.cc        **** 
+  27:new.cc        **** void* operator new(size_t size)
+  28:new.cc        **** {
+  87              		stabd 68,0,28
+  88              	
+  89              	
+  29:new.cc        **** 
+  30:new.cc        **** 	void* vpMallloc = malloc(size);
+  90              	LBB4	stabd 68,0,30
+  91 0014 160000   		jsr	_malloc__FUi
+  31:new.cc        **** 	if(vpMallloc != NULL)
+  92              		stabd 68,0,31
+  93 0017 8C0000   		tstd	
+  94 001a 2607     		bne	L12
+  95              		
+  32:new.cc        **** 	{
+  33:new.cc        **** 		return vpMallloc;
+  34:new.cc        **** 	}else { //fail to allocate,error
+  35:new.cc        **** 		pHandler();
+  96              		stabd 68,0,35
+  97 001c FD0000   		ldy	_pHandler
+  98 001f 1540     		jsr	0,y
+  36:new.cc        **** 		return NULL;
+  99              		stabd 68,0,36
+ 100 0021 87C7     		clrd	
+ 101              		stabd 68,0,33
+ 102              	
+ 103              	L12
+  37:new.cc        **** 	}
+  38:new.cc        **** }
+ 104              	LBE4	stabd 68,0,38
+ 105              	
+ 106 0023 3D       		rts
+ 107              	
+ 108              		stabs "__builtin_new:F24",36,0,28,___builtin_new
+ 109              		stabs "size:P4",64,0,28,0
+ 110              		stabs "vpMallloc:r24",64,0,30,0
+ 111              		stabn 192,0,0,LBB4
+ 112              		stabn 224,0,0,LBE4
+ 113              	
+ 114              	Lscope2	stabs "",36,0,0,Lscope2-___builtin_new
+ 115              	
+ 116              		global	___builtin_delete
+ 117              	___builtin_delete
+  39:new.cc        **** 
+  40:new.cc        **** void operator delete(void* p)
+  41:new.cc        **** {
+ 118              		stabd 68,0,41
+ 119              	
+ 120              	
+  42:new.cc        **** 	free(p);
+ 121              	LBB5	stabd 68,0,42
+ 122 0024 160000   		jsr	_free__FPv
+ 123              	
+  43:new.cc        **** //    delete p;
+  44:new.cc        **** }
+ 124              	LBE5	stabd 68,0,44
+ 125              	
+ 126 0027 3D       		rts
+ 127              	
+ 128              		stabs "__builtin_delete:F20",36,0,41,___builtin_delete
+ 129              		stabs "p:P24",64,0,41,0
+ 130              		stabn 192,0,0,LBB5
+ 131              		stabn 224,0,0,LBE5
+ 132              	
+ 133              	Lscope3	stabs "",36,0,0,Lscope3-___builtin_delete
+ 134              	
+ 135              		global	_set_new_handler__FPFv_v
+ 136              	_set_new_handler__FPFv_v
+  45:new.cc        **** /*
+  46:new.cc        **** void memory_handler()
+  47:new.cc        **** {
+  48:new.cc        ****    //fail to allocte memory
+  49:new.cc        ****    //exit(1);
+  50:new.cc        ****    set_new_handler(NULL);
+  51:new.cc        **** }
+  52:new.cc        **** */
+  53:new.cc        **** void set_new_handler(void (*pf)(void))
+  54:new.cc        **** {
+ 137              		stabd 68,0,54
+ 138              	
+ 139              	
+  55:new.cc        **** //   set_new_handler(pEHand);
+  56:new.cc        ****     pHandler = pf;
+ 140              	LBB6	stabd 68,0,56
+ 141 0028 7C0000   		std	_pHandler
+ 142              	
+  57:new.cc        **** 
+  58:new.cc        **** }
+ 143              	LBE6	stabd 68,0,58
+ 144              	
+ 145 002b 3D       		rts
+ 146              	
+ 147              		stabs "set_new_handler__FPFv_v:F20",36,0,54,_set_new_handler__FPFv_v
+ 148              		stabs "pf:P25=*26=f20",64,0,54,0
+ 149              		stabn 192,0,0,LBB6
+ 150              		stabn 224,0,0,LBE6
+ 151              	
+ 152              	Lscope4	stabs "",36,0,0,Lscope4-_set_new_handler__FPFv_v
+ 153              		stabs "pHandler:S25",40,0,7,_pHandler
+ 154              	
+ 155              		section	.bss
+ 156              	_pHandler
+ 157 0000 0000     		ds.b	2
+ 158              	
+ 159              	
+ 160              		end

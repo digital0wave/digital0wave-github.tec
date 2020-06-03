@@ -1,0 +1,11 @@
+Test procedure
+
+1. ServoConfigCmd to get parameters into Config
+2. ServoDisplayCmd to display status info periodically
+- Semaphore running.signal() in parse() and ServoDisplayCmd::main() periodically print out Status info
+- ServoDisplayCmd::main() keeps running between a pair of signal() and wait() until hit a key in parse()
+3. Play around parameters: pGain, iGain, dGain to find a critical damping
+- setpoint: 25 C, pGain=2, iGain=0.4, dGain=6 also set pwm of resistor to 1
+- Observed that the response goes back and forth between over and under damping and get to stable(critical damping) at the response between +- 2
+
+

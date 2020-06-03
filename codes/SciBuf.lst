@@ -1,0 +1,945 @@
+   1              	gcc2_compiled.:
+   2              	___gnu_compiled_cplusplus
+   3              		stabs "/home/elex8030/jseo/tec/",100,0,0,Ltext0
+   4              		stabs "SciBuf.cc",100,0,0,Ltext0
+   5              	
+   6              		section	.text
+   7              	
+   8              	Ltext0	stabs "int:t1=r1;-32768;32767;",128,0,0,0
+   9              		stabs "char:t2=r2;0;255;",128,0,0,0
+  10              		stabs "long int:t3=r1;0020000000000;0017777777777;",128,0,0,0
+  11              		stabs "unsigned int:t4=r4;0;65535;",128,0,0,0
+  12              		stabs "long unsigned int:t5=r1;0000000000000;0037777777777;",128,0,0,0
+  13              		stabs "long long int:t6=r1;0020000000000;0017777777777;",128,0,0,0
+  14              		stabs "long long unsigned int:t7=r1;0000000000000;0037777777777;",128,0,0,0
+  15              		stabs "short int:t8=r8;-32768;32767;",128,0,0,0
+  16              		stabs "short unsigned int:t9=r9;0;65535;",128,0,0,0
+  17              		stabs "signed char:t10=r10;-128;127;",128,0,0,0
+  18              		stabs "unsigned char:t11=r11;0;255;",128,0,0,0
+  19              		stabs "float:t12=r1;4;0;",128,0,0,0
+  20              		stabs "double:t13=r1;4;0;",128,0,0,0
+  21              		stabs "long double:t14=r1;4;0;",128,0,0,0
+  22              		stabs "complex int:t15=s4real:1,0,16;imag:1,16,16;;",128,0,0,0
+  23              		stabs "complex float:t16=r16;4;0;",128,0,0,0
+  24              		stabs "complex double:t17=r17;4;0;",128,0,0,0
+  25              		stabs "complex long double:t18=r18;4;0;",128,0,0,0
+  26              		stabs "bool:t19=@s8;-16;",128,0,0,0
+  27              		stabs "void:t20=20",128,0,0,0
+  28              		stabs "__wchar_t:t21=r21;-32768;32767;",128,0,0,0
+  29              		stabs "__vtbl_ptr_type:t22=*23=f1",128,0,0,0
+  30              		stabs "size_t:t4",128,0,5,0
+  31              		stabs "uint16:t4",128,0,6,0
+  32              		stabs "ulong32:t5",128,0,7,0
+  33              		stabs "ptrdiff_t:t1",128,0,8,0
+  34              		stabs "streampos:t1",128,0,19,0
+  35              		stabs "streamoff:t1",128,0,20,0
+  36              		stabs "open_mode:t24=ein:1,out:2,ate:4,\\",128,0,0,0
+  37              		stabs "app:8,trunc:16,nocreate:32,noreplace:64,\\",128,0,0,0
+  38              		stabs "binary:128,;",128,0,38,0
+  39              		stabs "io_state:t25=egoodbit:0,eofbit:1,failbit:2,\\",128,0,0,0
+  40              		stabs "badbit:4,;",128,0,50,0
+  41              		stabs "seek_dir:t26=ebeg:0,cur:1,end:2,;",128,0,58,0
+  42              		stabs "ios:T27=s16_sb:/028=*29=xsstreambuf:,0,16;_tie:/030=*31=xsostream:,16,16;\\",128,0,0,0
+  43              		stabs "_state:/01,32,16;_flags:/01,48,16;_width:/01,64,16;\\",128,0,0,0
+  44              		stabs "_precision:/01,80,16;_fill:/01,96,16;$vf27:32=*33=ar0;0;2;22,112;\\",128,0,0,0
+  45              		stabs "ios::34=##35=*27;:P9streambuf;2A.36=#27,20,35,1,20;:_$_3ios;2A*2;27;;\\",128,0,0,0
+  46              		stabs "rdbuf::37=##28;:;2B.;rdstate::38=##1;:;2B.;good::38:;2B.;eof::38:;2B.;\\",128,0,0,0
+  47              		stabs "fail::38:;2B.;bad::38:;2B.;__opPCv::39=##40=*20;:;2B.;__nt::38:;2B.;clear::41=##20;:i;2A.;\
+  48              		stabs "set::36:i;2A.;setstate::36:i;2A.;flags::38:;2B.42=##1;:i;2A.;setf::42:i;2A.\\",128,0,0,0
+  49              		stabs "43=##1;:ii;2A.;unsetf::42:i;2A.;width::38:;2B.42:i;2A.;fill::44=##2;:;2B.\\",128,0,0,0
+  50              		stabs "45=##2;:c;2A.;precision::38:;2B.42:i;2A.;tie::46=##30;:;2B.47=##30;:P7ostream;2A.;\\",128,0
+  51              		stabs "ios::48=##35;:;1A.;init::49=##20;:P9streambufP7ostream;1A.;ios::50=##35;:R3ios;0A.;\\",128,
+  52              		stabs "__as::51=##1;:R3ios;0A.;;~%27;",128,0,0,0
+  53              		stabs "ios:Tt27",128,0,310,0
+  54              		stabs "streambuf:Tt29=s20_del:/01,0,16;_base:/052=*2,16,16;\\",128,0,0,0
+  55              		stabs "_ebuf:/052,32,16;_pbase:/052,48,16;_pptr:/052,64,16;\\",128,0,0,0
+  56              		stabs "_epptr:/052,80,16;_eback:/052,96,16;_gptr:/052,112,16;\\",128,0,0,0
+  57              		stabs "_egptr:/052,128,16;$vf29:53=*54=ar0;0;11;22,144;streambuf::55=#29,20,28,1,20;:_$_9streambuf
+  58              		stabs "out_waiting::56=##1;:;2A.;sputc::57=##1;:i;2A.;sputn::58=##1;:PCci;2A.;\\",128,0,0,0
+  59              		stabs "in_avail::56:;2A*3;29;;sgetc::56:;2A.;snextc::56:;2A.;sbumpc::56:;2A.;\\",128,0,0,0
+  60              		stabs "stossc::59=##20;:;2A.;sgetn::60=##1;:Pci;2A.;sputbackc::61=##1;:c;2A.;\\",128,0,0,0
+  61              		stabs "seekoff::62=##1;:iQ23ios8seek_diri;2A*4;29;;seekpos::63=##1;:ii;2A*5;29;;\\",128,0,0,0
+  62              		stabs "sync::56:;2A*6;29;;streambuf::64=##28;:;1A.65=##28;:Pci;1A.;setb::66=##20;:PcT1i;1A.;\\",12
+  63              		stabs "setp::67=##20;:PcT1;1A.;setg::68=##20;:PcN21;1A.;blen::69=##1;:;1B.;base::70=##52;:;1B.;\\"
+  64              		stabs "ebuf::70:;1B.;pbase::70:;1B.;pptr::70:;1B.;epptr::70:;1B.;eback::70:;1B.;\\",128,0,0,0
+  65              		stabs "gptr::70:;1B.;egptr::70:;1B.;pbump::55:i;1A.;gbump::55:i;1A.;overflow::71=##1;:i;1A*7;29;;\
+  66              		stabs "xsputn::58:PCci;1A*8;29;;underflow::56:;1A*9;29;;xsgetn::60:Pci;1A*10;29;;\\",128,0,0,0
+  67              		stabs "pbackfail::57:i;1A*11;29;;streambuf::72=##28;:R9streambuf;0A.;__as::73=##1;:R9streambuf;0A.
+  68              		stabs "istream:Tt74=s20!1,120,27;$vb27:35,0;_gcount:/01,16,16;\\",128,0,0,0
+  69              		stabs "istream::75=##76=*74;:iP9streambuf;2A.77=#74,20,76,1,20;:_$_7istream;2A*2;27;;\\",128,0,0,0
+  70              		stabs "ipfx::78=##1;:i;2A.;isfx::79=##20;:;2A.;tellg::80=##1;:;2A.;seekg::81=##82=&74;:i;2A.\\",12
+  71              		stabs "83=##82;:iQ23ios8seek_dir;2A.;sync::80:;2A.;get::80:;2A.;peek::80:;2A.;get::84=##82;:Rc;2A.
+  72              		stabs "85=##82;:R9streambufi;2A.86=##82;:Pcii;2A.;getline::87=##82;:Pcii;2A.;read::88=##82;:Pci;2A
+  73              		stabs "putback::89=##82;:c;2A.;ignore::90=##82;:ii;2A.;gcount::80:;2A.;__rs::84:Rc;2A.\\",128,0,0,
+  74              		stabs "91=##82;:Ri;2A.92=##82;:RUi;2A.93=##82;:Rl;2A.94=##82;:RUl;2A.95=##82;:Rf;2A.\\",128,0,0,0
+  75              		stabs "96=##82;:Rd;2A.97=##82;:Pc;2A.98=##82;:P9streambuf;2A.99=##82;:PFR7istream_R7istream;2A.\\"
+  76              		stabs "100=##82;:PFR3ios_R3ios;2A.;istream::101=##76;:i;1A.102=##76;:iR7istream;0A.;\\",128,0,0,0
+  77              		stabs "__as::103=##1;:R7istream;0A.;;",128,0,678,0
+  78              		stabs "ostream:Tt31=s18!1,120,27;$vb27:35,0;ostream::104=##30;:iP9streambuf;2A.\\",128,0,0,0
+  79              		stabs "105=#31,20,30,1,20;:_$_7ostream;2A*2;27;;opfx::106=##1;:;2A.;osfx::107=##20;:;2A.;\\",128,0
+  80              		stabs "flush::108=##109=&31;:;2A.;tellp::106:;2A.;seekp::110=##109;:i;2A.111=##109;:iQ23ios8seek_d
+  81              		stabs "put::112=##109;:c;2A.;write::113=##109;:PCci;2A.;__ls::112:c;2A.110:i;2A.114=##109;:Ui;2A.\
+  82              		stabs "115=##109;:l;2A.116=##109;:Ul;2A.117=##109;:f;2A.118=##109;:d;2A.119=##109;:PCc;2A.\\",128,
+  83              		stabs "120=##109;:Pv;2A.121=##109;:P9streambuf;2A.122=##109;:PFR7ostream_R7ostream;2A.\\",128,0,0,
+  84              		stabs "123=##109;:PFR3ios_R3ios;2A.;ostream::124=##30;:i;1A.125=##30;:iR7ostream;0A.;\\",128,0,0,0
+  85              		stabs "__as::126=##1;:R7ostream;0A.;puts::127=##20;:PCcT1;0A.;puti::128=##20;:Uii;0A.;\\",128,0,0,
+  86              		stabs "putl::129=##20;:Uli;0A.;;",128,0,795,0
+  87              		stabs "iostream:Tt130=s22!2,020,74;0232,31;__as::131=##132=&130;:R8iostream;2A.;\\",128,0,0,0
+  88              		stabs "iostream::133=##134=*130;:iR8iostream;2A.135=##134;:iP9streambuf;2A.136=#130,20,134,1,20;:_
+  89              		stabs "137=##134;:i;1A.;;",128,0,815,0
+  90              		stabs "SciBuf:Tt138=s28!1,020,29;rxBuf:/052,160,16;\\",128,0,0,0
+  91              		stabs "rxEnd:/052,176,16;txBuf:/052,192,16;txEnd:/052,208,16;\\",128,0,0,0
+  92              		stabs "__as::139=##140=&138;:R6SciBuf;2A.;SciBuf::141=##142=*138;:R6SciBuf;2A.;send::143=##20;:c;0
+  93              		stabs "recv::144=##2;:;0A*13;138;;avail::145=##19;:;0A*14;138;;sync::146=##1;:;1A*6;29;;\\",128,0,
+  94              		stabs "overflow::147=##1;:i;1A*7;29;;underflow::146:;1A*9;29;;SciBuf::148=##142;:UiUi;2A.\\",128,0
+  95              		stabs "149=#138,20,142,1,20;:_$_6SciBuf;2A*2;29;;;~%29;",128,0,35,0
+  96              	
+  97              		global	___6SciBufUiUi
+  98              	___6SciBufUiUi
+   1:SciBuf.cc     **** //scibuf.cc
+   2:SciBuf.cc     **** //Lab4
+   3:SciBuf.cc     **** //Jin Won Seo
+   4:SciBuf.cc     **** 
+   5:SciBuf.cc     **** #include "SciBuf.h"
+   6:SciBuf.cc     **** 
+   7:SciBuf.cc     **** SciBuf::SciBuf(size_t rxLen, size_t txLen)
+   8:SciBuf.cc     **** :rxBuf(new char[rxLen]), rxEnd(rxBuf+rxLen), txBuf(new char[txLen]), txEnd(txBuf+txLen)
+  99              		stabd 68,0,8
+ 100 0000 1B98     		leas	-8,s
+ 101              	
+ 102 0002 6C86     		std	6,s
+ 103 0004 160000   		jsr	___9streambuf
+ 104 0007 CC0000   		ldd	#___vt_6SciBuf
+ 105 000a ED86     		ldy	6,s
+ 106 000c 6CE812   		std	18,y
+ 107 000f EC8A     		ldd	10,s
+ 108 0011 160000   		jsr	___builtin_vec_new
+ 109 0014 B745     		tfr	d,x
+ 110 0016 ED86     		ldy	6,s
+ 111 0018 6EE814   		stx	20,y
+ 112 001b EC8A     		ldd	10,s
+ 113 001d 1AE6     		leax	d,x
+ 114 001f 6EE816   		stx	22,y
+ 115 0022 EC8C     		ldd	12,s
+ 116 0024 160000   		jsr	___builtin_vec_new
+ 117 0027 B745     		tfr	d,x
+ 118 0029 ED86     		ldy	6,s
+ 119 002b 6EE818   		stx	24,y
+ 120 002e EC8C     		ldd	12,s
+ 121 0030 1AE6     		leax	d,x
+ 122 0032 6EE81A   		stx	26,y
+   9:SciBuf.cc     **** {
+ 123              		stabd 68,0,9
+ 124              	
+  10:SciBuf.cc     **** 	setg(rxBuf, rxEnd, rxEnd);//rxBuf empty
+ 125              	LBB2	stabd 68,0,10
+ 126 0035 EDE814   		ldy	20,y
+ 127 0038 6D80     		sty	0,s
+ 128 003a ED86     		ldy	6,s
+ 129 003c EDE816   		ldy	22,y
+ 130 003f 6D82     		sty	2,s
+ 131 0041 ED86     		ldy	6,s
+ 132 0043 EDE816   		ldy	22,y
+ 133 0046 6D84     		sty	4,s
+ 134 0048 EC86     		ldd	6,s
+ 135 004a 160000   		jsr	_setg__9streambufPcN21
+  11:SciBuf.cc     **** 	setp(txBuf, txEnd);//txBuf is nothing there
+ 136              		stabd 68,0,11
+ 137 004d ED86     		ldy	6,s
+ 138 004f EDE818   		ldy	24,y
+ 139 0052 6D80     		sty	0,s
+ 140 0054 ED86     		ldy	6,s
+ 141 0056 EDE81A   		ldy	26,y
+ 142 0059 6D82     		sty	2,s
+ 143 005b EC86     		ldd	6,s
+ 144 005d 160000   		jsr	_setp__9streambufPcT1
+ 145              	
+ 146 0060 EC86     	LBE2	ldd	6,s
+  12:SciBuf.cc     **** }
+ 147              		stabd 68,0,12
+ 148              	
+ 149 0062 1B88     		leas	8,s
+ 150 0064 3D       		rts
+ 151              	
+ 152              		stabs "__6SciBufUiUi:F142",36,0,8,___6SciBufUiUi
+ 153              		stabs "this:p142",160,0,8,6
+ 154              		stabs "rxLen:p4",160,0,8,10
+ 155              		stabs "txLen:p4",160,0,8,12
+ 156              		stabn 192,0,0,LBB2
+ 157              		stabn 224,0,0,LBE2
+ 158              	
+ 159              	Lscope0	stabs "",36,0,0,Lscope0-___6SciBufUiUi
+ 160              	
+ 161              		global	__$_6SciBuf
+ 162              	__$_6SciBuf
+  13:SciBuf.cc     **** 
+  14:SciBuf.cc     **** SciBuf::~SciBuf()
+  15:SciBuf.cc     **** {
+ 163              		stabd 68,0,15
+ 164 0065 1B9C     		leas	-4,s
+ 165              	
+ 166 0067 6C82     		std	2,s
+ 167 0069 CC0000   		ldd	#___vt_6SciBuf
+ 168 006c ED82     		ldy	2,s
+ 169 006e 6CE812   		std	18,y
+ 170              	
+  16:SciBuf.cc     **** 	delete[] rxBuf;
+ 171              	LBB3	stabd 68,0,16
+ 172 0071 EEE814   		ldx	20,y
+ 173 0074 2705     		beq	L139
+ 174              		
+ 175 0076 B754     		tfr	x,d
+ 176 0078 160000   		jsr	___builtin_vec_delete
+ 177              	
+  17:SciBuf.cc     **** 	delete[] txBuf;
+ 178              	L139	stabd 68,0,17
+ 179 007b ED82     		ldy	2,s
+ 180 007d EEE818   		ldx	24,y
+ 181 0080 2705     		beq	L142
+ 182              		
+ 183 0082 B754     		tfr	x,d
+ 184 0084 160000   		jsr	___builtin_vec_delete
+ 185              	
+ 186              	LBE3
+ 187 0087 EC86     	L142	ldd	6,s
+ 188 0089 6C80     		std	0,s
+ 189 008b EC82     		ldd	2,s
+ 190 008d 160000   		jsr	__$_9streambuf
+  18:SciBuf.cc     **** }
+ 191              		stabd 68,0,18
+ 192              	
+ 193 0090 1B84     		leas	4,s
+ 194 0092 3D       		rts
+ 195              	
+ 196              		stabs "_$_6SciBuf:F20",36,0,15,__$_6SciBuf
+ 197              		stabs "this:p142",160,0,15,2
+ 198              		stabs "__in_chrg:p1",160,0,15,6
+ 199              		stabn 192,0,0,LBB3
+ 200              		stabn 224,0,0,LBE3
+ 201              	
+ 202              	Lscope1	stabs "",36,0,0,Lscope1-__$_6SciBuf
+ 203              	
+ 204              		global	_sync__6SciBuf
+ 205              	_sync__6SciBuf
+  19:SciBuf.cc     **** 
+  20:SciBuf.cc     **** /*
+  21:SciBuf.cc     **** * write output buffer to device
+  22:SciBuf.cc     **** * reset buffer(txBuffer0, setp(beg,end)
+  23:SciBuf.cc     **** */
+  24:SciBuf.cc     **** int SciBuf::sync()
+  25:SciBuf.cc     **** {
+ 206              		stabd 68,0,25
+ 207 0093 1B96     		leas	-10,s
+ 208              	
+ 209 0095 6C88     		std	8,s
+ 210              	
+  26:SciBuf.cc     **** 	for(char* p=pbase(); p<pptr(); p++)
+ 211              	LBB4	stabd 68,0,26
+ 212              	
+ 213              	LBB5	stabs "iostream.h",132,0,0,Ltext1
+ 214              	
+   1:iostream.h    **** // $Id: iostream.h,v 1.1 2002/11/16 07:31:20 querbach Exp $
+   2:iostream.h    **** 
+   3:iostream.h    **** // iostream.h	 	      Copyright (C) 1996-1997, Real-Time Systems Inc.
+   4:iostream.h    **** //------------------------------------------ All Rights Reserved ------------
+   5:iostream.h    **** //
+   6:iostream.h    **** //	C++ Streams Library
+   7:iostream.h    **** //
+   8:iostream.h    **** //---------------------------------------------------------------------------
+   9:iostream.h    **** 
+  10:iostream.h    **** #ifndef IOSTREAM_H
+  11:iostream.h    **** #define IOSTREAM_H
+  12:iostream.h    **** 
+  13:iostream.h    **** 
+  14:iostream.h    **** //---------------------------------------------------------------------------
+  15:iostream.h    **** //
+  16:iostream.h    **** //	Basic definitions
+  17:iostream.h    **** //
+  18:iostream.h    **** 
+  19:iostream.h    **** typedef int streampos;		// position in stream
+  20:iostream.h    **** typedef int streamoff;		// delta position in stream
+  21:iostream.h    **** 
+  22:iostream.h    **** const int EOF = -1;		// end of file sentinel
+  23:iostream.h    **** 
+  24:iostream.h    **** 
+  25:iostream.h    **** //---------------------------------------------------------------------------
+  26:iostream.h    **** //
+  27:iostream.h    **** //	Base class for all streams
+  28:iostream.h    **** //
+  29:iostream.h    **** 
+  30:iostream.h    **** class ios
+  31:iostream.h    **** {
+  32:iostream.h    **** public:
+  33:iostream.h    **** 
+  34:iostream.h    ****   // special values
+  35:iostream.h    **** 
+  36:iostream.h    ****   enum open_mode		// stream opening modes
+  37:iostream.h    ****   {
+  38:iostream.h    ****     in		= 0x01,		// open for reading
+  39:iostream.h    ****     out		= 0x02,		// open for writing
+  40:iostream.h    ****     ate		= 0x04,		// seek to eof upon original open
+  41:iostream.h    ****     app		= 0x08,		// append mode: all additions at eof
+  42:iostream.h    ****     trunc	= 0x10,		// truncate file if already exists
+  43:iostream.h    ****     nocreate	= 0x20,		// open fails if file doesn't exist
+  44:iostream.h    ****     noreplace	= 0x40,		// open fails if file already exists
+  45:iostream.h    ****     binary	= 0x80		// binary file    
+  46:iostream.h    ****   };
+  47:iostream.h    **** 
+  48:iostream.h    ****   enum io_state			// stream state flags
+  49:iostream.h    ****   {
+  50:iostream.h    ****     goodbit	= 0x00,		   // no errors
+  51:iostream.h    ****     eofbit	= 0x01,		   // end of file reached
+  52:iostream.h    ****     failbit	= 0x02,		   // formatting/parsing error
+  53:iostream.h    ****     badbit	= 0x04		   // serious error, data may be lost
+  54:iostream.h    ****   };
+  55:iostream.h    **** 
+  56:iostream.h    ****   enum seek_dir			// seek starting points
+  57:iostream.h    ****   {
+  58:iostream.h    ****     beg,			   // start from beginning, seek forward
+  59:iostream.h    ****     cur,			   // start from current, seek either way
+  60:iostream.h    ****     end				   // start from end, seek backward
+  61:iostream.h    ****   };
+  62:iostream.h    **** 
+  63:iostream.h    ****   enum				// formatting flags
+  64:iostream.h    ****   {
+  65:iostream.h    ****     skipws	= 0x0001,	   // skip whitespace
+  66:iostream.h    ****     left	= 0x0002,	   // align left in field
+  67:iostream.h    ****     internal	= 0x0004,	   // pad between sign and number
+  68:iostream.h    ****     right	= 0x0008,	   // align right in field
+  69:iostream.h    ****     oct		= 0x0010,	   // octal base
+  70:iostream.h    ****     dec		= 0x0020,	   // decimal base
+  71:iostream.h    ****     hex		= 0x0040,	   // hexadecimal base
+  72:iostream.h    ****     showbase	= 0x0080,	   // show base indicator for integers
+  73:iostream.h    ****     showpoint	= 0x0100,	   // always show point for floats
+  74:iostream.h    ****     uppercase	= 0x0200,	   // show 'X' for hex, 'E' for floats
+  75:iostream.h    ****     showpos	= 0x0400,	   // show '+' for positive numbers
+  76:iostream.h    ****     scientific	= 0x0800,	   // show n.nnnnEnn for floats
+  77:iostream.h    ****     fixed	= 0x1000,	   // show nnn.nnn for floats
+  78:iostream.h    ****     unitbuf	= 0x2000,	   // flush after each output operation
+  79:iostream.h    ****     stdio	= 0x4000,	   // flush after each character
+  80:iostream.h    **** 
+  81:iostream.h    ****     basefield	= oct | dec | hex,		// all number base bits
+  82:iostream.h    ****     adjustfield	= left | internal | right,	// all alignment bits
+  83:iostream.h    ****     floatfield	= scientific | fixed		// all float format bits
+  84:iostream.h    ****   };
+  85:iostream.h    **** 
+  86:iostream.h    **** 
+  87:iostream.h    ****   // constructors and destructor
+  88:iostream.h    **** 
+  89:iostream.h    ****   ios				// create stream
+  90:iostream.h    ****   (
+  91:iostream.h    ****     class streambuf* buf	   // buffer for stream
+  92:iostream.h    ****   );
+  93:iostream.h    **** 
+  94:iostream.h    ****   virtual ~ios();		// destroy stream
+  95:iostream.h    **** 
+  96:iostream.h    ****   class streambuf* rdbuf() const // return pointer to streambuf
+  97:iostream.h    ****   {
+  98:iostream.h    ****     return _sb;
+  99:iostream.h    ****   }
+ 100:iostream.h    **** 
+ 101:iostream.h    **** 
+ 102:iostream.h    ****   // stream state interrogation
+ 103:iostream.h    **** 
+ 104:iostream.h    ****   int rdstate() const		// get entire state word
+ 105:iostream.h    ****   {
+ 106:iostream.h    ****     return _state;
+ 107:iostream.h    ****   }
+ 108:iostream.h    **** 
+ 109:iostream.h    ****   int good() const		// no errors on stream?
+ 110:iostream.h    ****   {
+ 111:iostream.h    ****     return _state == 0;
+ 112:iostream.h    ****   }
+ 113:iostream.h    **** 
+ 114:iostream.h    ****   int eof() const		// at end of file?
+ 115:iostream.h    ****   {
+ 116:iostream.h    ****     return _state & eofbit;
+ 117:iostream.h    ****   }
+ 118:iostream.h    **** 
+ 119:iostream.h    ****   int fail() const		// error on stream?
+ 120:iostream.h    ****   {
+ 121:iostream.h    ****     return _state & (failbit | badbit);
+ 122:iostream.h    ****   }
+ 123:iostream.h    **** 
+ 124:iostream.h    ****   int bad() const		// serious error on stream?
+ 125:iostream.h    ****   {
+ 126:iostream.h    ****     return _state & badbit;
+ 127:iostream.h    ****   }
+ 128:iostream.h    **** 
+ 129:iostream.h    ****   operator const void* () const	// test stream state
+ 130:iostream.h    ****   {
+ 131:iostream.h    ****     return fail() ? 0 : this;
+ 132:iostream.h    ****   }
+ 133:iostream.h    **** 
+ 134:iostream.h    ****   int operator ! () const	// test stream state
+ 135:iostream.h    ****   {
+ 136:iostream.h    ****     return fail();
+ 137:iostream.h    ****   }
+ 138:iostream.h    **** 
+ 139:iostream.h    **** 
+ 140:iostream.h    ****   // stream state control
+ 141:iostream.h    **** 
+ 142:iostream.h    ****   void clear			// set stream state
+ 143:iostream.h    ****   (
+ 144:iostream.h    ****     int s = 0			   // new stream state
+ 145:iostream.h    ****   )
+ 146:iostream.h    ****   {
+ 147:iostream.h    ****     _state = s;
+ 148:iostream.h    ****   }
+ 149:iostream.h    **** 
+ 150:iostream.h    ****   void set			// set bits in stream state
+ 151:iostream.h    ****   (
+ 152:iostream.h    ****     int mask			   // bits to set
+ 153:iostream.h    ****   )
+ 154:iostream.h    ****   {
+ 155:iostream.h    ****     _state |= mask;
+ 156:iostream.h    ****   }
+ 157:iostream.h    **** 
+ 158:iostream.h    ****   void setstate			// set bits in stream state
+ 159:iostream.h    ****   (
+ 160:iostream.h    ****     int mask			   // bits to set
+ 161:iostream.h    ****   )
+ 162:iostream.h    ****   {
+ 163:iostream.h    ****     _state |= mask;
+ 164:iostream.h    ****   }
+ 165:iostream.h    **** 
+ 166:iostream.h    **** 
+ 167:iostream.h    ****   // formatting and parsing flags
+ 168:iostream.h    **** 
+ 169:iostream.h    ****   int flags() const		// get current formatting flags
+ 170:iostream.h    ****   {
+ 171:iostream.h    ****     return _flags;
+ 172:iostream.h    ****   }
+ 173:iostream.h    **** 
+ 174:iostream.h    ****   int flags			// get/set all formatting flags at once
+ 175:iostream.h    ****   (
+ 176:iostream.h    ****     int word			   // entire flags word
+ 177:iostream.h    ****   )
+ 178:iostream.h    ****   {
+ 179:iostream.h    ****     int old = _flags;
+ 180:iostream.h    ****     _flags = word;
+ 181:iostream.h    ****     return old;
+ 182:iostream.h    ****   }
+ 183:iostream.h    **** 
+ 184:iostream.h    ****   int setf			// set some formatting flags unconditionally
+ 185:iostream.h    ****   (
+ 186:iostream.h    ****     int bits			   // flag bits to set
+ 187:iostream.h    ****   )
+ 188:iostream.h    ****   {
+ 189:iostream.h    ****     int old = _flags;
+ 190:iostream.h    ****     _flags |= bits;
+ 191:iostream.h    ****     return old;
+ 192:iostream.h    ****   }
+ 193:iostream.h    **** 
+ 194:iostream.h    ****   int setf			// set some flags in given field
+ 195:iostream.h    ****   (
+ 196:iostream.h    ****     int bits,			   // flag bits to set
+ 197:iostream.h    ****     int field			   // flag bits to clear first
+ 198:iostream.h    ****   )
+ 199:iostream.h    ****   {
+ 200:iostream.h    ****     int old = _flags;
+ 201:iostream.h    ****     _flags = (_flags & ~field) | (bits & field);
+ 202:iostream.h    ****     return old;
+ 203:iostream.h    ****   }
+ 204:iostream.h    **** 
+ 205:iostream.h    ****   int unsetf			// clear some formatting flags
+ 206:iostream.h    ****   (
+ 207:iostream.h    ****     int bits			   // flag bits to clear
+ 208:iostream.h    ****   )
+ 209:iostream.h    ****   {
+ 210:iostream.h    ****     int old = _flags;
+ 211:iostream.h    ****     _flags &= ~bits;
+ 212:iostream.h    ****     return old;
+ 213:iostream.h    ****   }
+ 214:iostream.h    **** 
+ 215:iostream.h    **** 
+ 216:iostream.h    ****   // field width control
+ 217:iostream.h    **** 
+ 218:iostream.h    ****   int width() const		// get current field width
+ 219:iostream.h    ****   {
+ 220:iostream.h    ****     return _width;
+ 221:iostream.h    ****   }
+ 222:iostream.h    **** 
+ 223:iostream.h    ****   int width			// get/set field width
+ 224:iostream.h    ****   (
+ 225:iostream.h    ****     int w			   // new width to set
+ 226:iostream.h    ****   )
+ 227:iostream.h    ****   {
+ 228:iostream.h    ****     int old = _width;
+ 229:iostream.h    ****     _width = w;
+ 230:iostream.h    ****     return old;
+ 231:iostream.h    ****   }
+ 232:iostream.h    **** 
+ 233:iostream.h    **** 
+ 234:iostream.h    ****   // output padding character control
+ 235:iostream.h    **** 
+ 236:iostream.h    ****   char fill() const		// get current fill character
+ 237:iostream.h    ****   {
+ 238:iostream.h    ****     return _fill;
+ 239:iostream.h    ****   }
+ 240:iostream.h    **** 
+ 241:iostream.h    ****   char fill			// get/set fill character
+ 242:iostream.h    ****   (
+ 243:iostream.h    ****     char f			   // new fill character
+ 244:iostream.h    ****   )
+ 245:iostream.h    ****   {
+ 246:iostream.h    ****     char old = _fill;
+ 247:iostream.h    ****     _fill = f;
+ 248:iostream.h    ****     return old;
+ 249:iostream.h    ****   }
+ 250:iostream.h    **** 
+ 251:iostream.h    **** 
+ 252:iostream.h    ****   // float output precision control
+ 253:iostream.h    **** 
+ 254:iostream.h    ****   int precision() const		// get float output precision
+ 255:iostream.h    ****   {
+ 256:iostream.h    ****     return _precision;
+ 257:iostream.h    ****   }
+ 258:iostream.h    **** 
+ 259:iostream.h    ****   int precision			// get/set output precision
+ 260:iostream.h    ****   (
+ 261:iostream.h    ****     int p			   // new float precision
+ 262:iostream.h    ****   )
+ 263:iostream.h    ****   {
+ 264:iostream.h    ****     int old = _precision;
+ 265:iostream.h    ****     _precision = p;
+ 266:iostream.h    ****     return old;
+ 267:iostream.h    ****   }
+ 268:iostream.h    **** 
+ 269:iostream.h    **** 
+ 270:iostream.h    ****   // tied stream control
+ 271:iostream.h    **** 
+ 272:iostream.h    ****   class ostream* tie() const	// return pointer to tied ostream
+ 273:iostream.h    ****   {
+ 274:iostream.h    ****     return _tie;
+ 275:iostream.h    ****   }
+ 276:iostream.h    **** 
+ 277:iostream.h    ****   class ostream* ios::tie	// set/get pointer to tied stream
+ 278:iostream.h    ****   (
+ 279:iostream.h    ****     ostream* os      		   // new tied output stream
+ 280:iostream.h    ****   )
+ 281:iostream.h    ****   {
+ 282:iostream.h    ****     ostream* old = _tie;
+ 283:iostream.h    ****     _tie = os;
+ 284:iostream.h    ****     return old;
+ 285:iostream.h    ****   }
+ 286:iostream.h    **** 
+ 287:iostream.h    **** 
+ 288:iostream.h    **** protected:
+ 289:iostream.h    ****   ios();			// create uninitialized ios
+ 290:iostream.h    **** 
+ 291:iostream.h    ****   void init			// initialize stream
+ 292:iostream.h    ****   (
+ 293:iostream.h    ****     class streambuf* s,		   // buffer for stream
+ 294:iostream.h    ****     class ostream* t = 0	   // ostream to tie to
+ 295:iostream.h    ****   );
+ 296:iostream.h    ****   
+ 297:iostream.h    **** private:
+ 298:iostream.h    ****   ios(ios&);			// protect from copying
+ 299:iostream.h    ****   operator = (ios&);		// protect from assignment
+ 300:iostream.h    **** 
+ 301:iostream.h    ****   class streambuf* _sb;		// the associated streambuf
+ 302:iostream.h    ****   class ostream* _tie;		// tied ostream, if any
+ 303:iostream.h    **** 
+ 304:iostream.h    ****   int _state;			// stream state
+ 305:iostream.h    **** 
+ 306:iostream.h    ****   int _flags;			// formatting flags
+ 307:iostream.h    ****   int _width;			// field width for next operation
+ 308:iostream.h    ****   int _precision;		// float output precision
+ 309:iostream.h    ****   int _fill;			// output fill character
+ 310:iostream.h    **** };
+ 311:iostream.h    **** 
+ 312:iostream.h    **** 
+ 313:iostream.h    **** //---------------------------------------------------------------------------
+ 314:iostream.h    **** //
+ 315:iostream.h    **** //	Base class for all stream buffers
+ 316:iostream.h    **** //
+ 317:iostream.h    **** 
+ 318:iostream.h    **** class streambuf
+ 319:iostream.h    **** {
+ 320:iostream.h    **** public:
+ 321:iostream.h    **** 
+ 322:iostream.h    ****   // destructor
+ 323:iostream.h    **** 
+ 324:iostream.h    ****   virtual ~streambuf();		// destroy streambuf
+ 325:iostream.h    **** 
+ 326:iostream.h    **** 
+ 327:iostream.h    ****   // inserting characters
+ 328:iostream.h    **** 
+ 329:iostream.h    ****   int out_waiting();		// get number of characters waiting
+ 330:iostream.h    **** 
+ 331:iostream.h    ****   int sputc			// put character to streambuf
+ 332:iostream.h    ****   (
+ 333:iostream.h    ****     int c			   // character to put
+ 334:iostream.h    ****   );
+ 335:iostream.h    **** 
+ 336:iostream.h    ****   int sputn			// put block to streambuf
+ 337:iostream.h    ****   (
+ 338:iostream.h    ****     const char* buf, int len	   // buffer and length
+ 339:iostream.h    ****   )
+ 340:iostream.h    ****   {
+ 341:iostream.h    ****     return xsputn(buf, len);
+ 342:iostream.h    ****   }
+ 343:iostream.h    **** 
+ 344:iostream.h    **** 
+ 345:iostream.h    ****   // extracting characters
+ 346:iostream.h    **** 
+ 347:iostream.h    ****   virtual int in_avail();	// get number of characters available
+ 348:iostream.h    **** 
+ 349:iostream.h    ****   int sgetc();			// get character, leave in buffer
+ 350:iostream.h    **** 
+ 351:iostream.h    ****   int snextc();			// advance to and get next character
+ 352:iostream.h    **** 
+ 353:iostream.h    ****   int sbumpc();			// get character, advance to next character
+ 354:iostream.h    **** 
+ 355:iostream.h    ****   void stossc();		// advance to next character
+ 356:iostream.h    **** 
+ 357:iostream.h    ****   int sgetn			// get block from streambuf
+ 358:iostream.h    ****   (
+ 359:iostream.h    ****     char* buf, int len		   // buffer and length
+ 360:iostream.h    ****   )
+ 361:iostream.h    ****   {
+ 362:iostream.h    ****     return xsgetn(buf, len);
+ 363:iostream.h    ****   }
+ 364:iostream.h    **** 
+ 365:iostream.h    ****   int sputbackc			// push character back on stream
+ 366:iostream.h    ****   (
+ 367:iostream.h    ****     char c
+ 368:iostream.h    ****   );
+ 369:iostream.h    **** 
+ 370:iostream.h    **** 
+ 371:iostream.h    ****   // positioning stream
+ 372:iostream.h    **** 
+ 373:iostream.h    ****   virtual streampos seekoff	// seek from given point
+ 374:iostream.h    ****   (
+ 375:iostream.h    ****     streamoff off,		     // desired offset
+ 376:iostream.h    ****     ios::seek_dir dir,		     // point to seek from
+ 377:iostream.h    ****     int mode = (ios::in | ios::out)  // stream mode to seek
+ 378:iostream.h    ****   );
+ 379:iostream.h    **** 
+ 380:iostream.h    ****   virtual streampos seekpos	// seek to absolute position
+ 381:iostream.h    ****   (
+ 382:iostream.h    ****     streampos pos,		     // desired offset
+ 383:iostream.h    ****     int mode = (ios::in | ios::out)  // stream mode to seek
+ 384:iostream.h    ****   );
+ 385:iostream.h    **** 
+ 386:iostream.h    **** 
+ 387:iostream.h    ****   // buffer maintenance
+ 388:iostream.h    **** 
+ 389:iostream.h    ****   virtual int sync();		// flush output buffer
+ 390:iostream.h    **** 
+ 391:iostream.h    **** 
+ 392:iostream.h    **** protected:
+ 393:iostream.h    **** 
+ 394:iostream.h    ****   // constructors
+ 395:iostream.h    **** 
+ 396:iostream.h    ****   streambuf();			// create without buffer
+ 397:iostream.h    **** 
+ 398:iostream.h    ****   streambuf			// create from supplied buffer
+ 399:iostream.h    ****   (
+ 400:iostream.h    ****     char* buf, int len		   // buffer and length
+ 401:iostream.h    ****   );
+ 402:iostream.h    **** 
+ 403:iostream.h    **** 
+ 404:iostream.h    ****   // pointer manipulation
+ 405:iostream.h    **** 
+ 406:iostream.h    ****   void setb			// set up physical buffer
+ 407:iostream.h    ****   (
+ 408:iostream.h    ****     char* base,			   // base pointer
+ 409:iostream.h    ****     char* ebuf,			   // end pointer
+ 410:iostream.h    ****     int del			   // non-zero if destructor should delete
+ 411:iostream.h    ****   );
+ 412:iostream.h    **** 
+ 413:iostream.h    ****   void setp			// set up put area pointers
+ 414:iostream.h    ****   (
+ 415:iostream.h    ****     char* base_cur,		   // base and current pointer
+ 416:iostream.h    ****     char* end			   // end pointer
+ 417:iostream.h    ****   );
+ 418:iostream.h    **** 
+ 419:iostream.h    ****   void setg			// set up get area pointers
+ 420:iostream.h    ****   (
+ 421:iostream.h    ****     char* base,			   // base pointer
+ 422:iostream.h    ****     char* cur,			   // current pointer
+ 423:iostream.h    ****     char* end			   // end pointer
+ 424:iostream.h    ****   );
+ 425:iostream.h    **** 
+ 426:iostream.h    ****   int blen() const		// get length of physical buffer
+ 427:iostream.h    ****   {
+ 428:iostream.h    ****     return _ebuf - _base;
+ 429:iostream.h    ****   }   
+ 430:iostream.h    **** 
+ 431:iostream.h    ****   char* base() const		// get start of physical buffer
+ 432:iostream.h    ****   {
+ 433:iostream.h    ****     return _base;
+ 434:iostream.h    ****   }
+ 435:iostream.h    **** 
+ 436:iostream.h    ****   char* ebuf() const		// get end of physical buffer
+ 437:iostream.h    ****   {
+ 438:iostream.h    ****     return _ebuf;
+ 439:iostream.h    ****   }
+ 440:iostream.h    **** 
+ 441:iostream.h    ****   char* pbase()	const		// get start of put area
+ 442:iostream.h    ****   {
+ 215              	Ltext1	stabd 68,0,442
+ 216              	
+ 217              	LBB6
+ 443:iostream.h    ****     return _pbase;
+ 218              	LBB7	stabd 68,0,443
+ 219 0097 B746     		tfr	d,y
+ 220 0099 ED46     		ldy	6,y
+ 221 009b 6D86     		sty	6,s
+ 222              	
+ 444:iostream.h    ****   }
+ 223              	LBE7	stabd 68,0,444
+ 224              	
+ 225              	LBE6	stabs "SciBuf.cc",132,0,0,Ltext2
+ 226              	
+ 227              	Ltext2	stabd 68,0,26
+ 228              	
+ 229              	L145
+ 230              	LBB8	stabs "iostream.h",132,0,0,Ltext3
+ 231              	
+ 445:iostream.h    **** 
+ 446:iostream.h    ****   char* pptr() const		// get current position in put area
+ 447:iostream.h    ****   {
+ 232              	Ltext3	stabd 68,0,447
+ 233              	
+ 234              	LBB9
+ 448:iostream.h    ****     return _pptr;
+ 235              	LBB10	stabd 68,0,448
+ 236              	
+ 449:iostream.h    ****   }
+ 237              	LBE10	stabd 68,0,449
+ 238              	
+ 239              	LBE9	stabs "SciBuf.cc",132,0,0,Ltext4
+ 240              	
+ 241              	Ltext4	stabd 68,0,26
+ 242 009d ED86     		ldy	6,s
+ 243 009f EE88     		ldx	8,s
+ 244 00a1 AD08     		cpy	8,x
+ 245 00a3 2412     		bhs	L146
+ 246              		
+  27:SciBuf.cc     **** 		send(*p);
+ 247              		stabd 68,0,27
+ 248 00a5 EEE012   		ldx	18,x
+ 249 00a8 E670     		ldab	1,y+
+ 250 00aa 87       		clra	
+ 251 00ab 6D86     		sty	6,s
+ 252 00ad 6C80     		std	0,s
+ 253 00af EC88     		ldd	8,s
+ 254 00b1 15E30018 		jsr	[24,x]
+ 255              	
+ 256 00b5 20E6     	LBE8	bra	L145
+ 257              		
+ 258              	
+ 259              	L146
+  28:SciBuf.cc     **** 	setp(txBuf, txEnd);
+ 260              	LBE5	stabd 68,0,28
+ 261 00b7 ED88     		ldy	8,s
+ 262 00b9 EDE818   		ldy	24,y
+ 263 00bc 6D80     		sty	0,s
+ 264 00be EE88     		ldx	8,s
+ 265 00c0 EEE01A   		ldx	26,x
+ 266 00c3 6E82     		stx	2,s
+ 267 00c5 EC88     		ldd	8,s
+ 268 00c7 160000   		jsr	_setp__9streambufPcT1
+  29:SciBuf.cc     **** 	return 0;
+ 269              		stabd 68,0,29
+ 270 00ca 87C7     		clrd	
+ 271              	
+  30:SciBuf.cc     **** }
+ 272              	LBE4	stabd 68,0,30
+ 273              	
+ 274 00cc 1B8A     		leas	10,s
+ 275 00ce 3D       		rts
+ 276              	
+ 277              		stabs "sync__6SciBuf:F1",36,0,25,_sync__6SciBuf
+ 278              		stabs "this:p142",160,0,25,8
+ 279              		stabn 192,0,0,LBB4
+ 280              		stabs "p:52",128,0,26,6
+ 281              		stabn 192,0,0,LBB5
+ 282              		stabs "this:150=*29",128,0,26,8
+ 283              		stabn 192,0,0,LBB6
+ 284              		stabn 192,0,0,LBB7
+ 285              		stabn 224,0,0,LBE7
+ 286              		stabn 224,0,0,LBE6
+ 287              		stabn 192,0,0,LBB8
+ 288              		stabs "this:150",128,0,26,8
+ 289              		stabn 192,0,0,LBB9
+ 290              		stabn 192,0,0,LBB10
+ 291              		stabn 224,0,0,LBE10
+ 292              		stabn 224,0,0,LBE9
+ 293              		stabn 224,0,0,LBE8
+ 294              		stabn 224,0,0,LBE5
+ 295              		stabn 224,0,0,LBE4
+ 296              	
+ 297              	Lscope2	stabs "",36,0,0,Lscope2-_sync__6SciBuf
+ 298              	
+ 299              		global	_overflow__6SciBufi
+ 300              	_overflow__6SciBufi
+  31:SciBuf.cc     **** /*
+  32:SciBuf.cc     **** * this is for when buffer is full but there is one char needs to get in buffer
+  33:SciBuf.cc     **** * call sync() to empty buffer(txBuffer)
+  34:SciBuf.cc     **** * deal with one more char
+  35:SciBuf.cc     **** */
+  36:SciBuf.cc     **** int SciBuf::overflow(int c)
+  37:SciBuf.cc     **** {
+ 301              		stabd 68,0,37
+ 302 00cf 1B9C     		leas	-4,s
+ 303              	
+ 304 00d1 6C82     		std	2,s
+ 305              	
+  38:SciBuf.cc     **** 	sync();
+ 306              	LBB11	stabd 68,0,38
+ 307 00d3 B746     		tfr	d,y
+ 308 00d5 EEE812   		ldx	18,y
+ 309 00d8 15E3000C 		jsr	[12,x]
+  39:SciBuf.cc     **** 	sputc(c);//put c in buffer
+ 310              		stabd 68,0,39
+ 311 00dc ED86     		ldy	6,s
+ 312 00de 6D80     		sty	0,s
+ 313 00e0 EC82     		ldd	2,s
+ 314 00e2 160000   		jsr	_sputc__9streambufi
+  40:SciBuf.cc     **** 	return 0;
+ 315              		stabd 68,0,40
+ 316 00e5 87C7     		clrd	
+ 317              	
+  41:SciBuf.cc     **** }
+ 318              	LBE11	stabd 68,0,41
+ 319              	
+ 320 00e7 1B84     		leas	4,s
+ 321 00e9 3D       		rts
+ 322              	
+ 323              		stabs "overflow__6SciBufi:F1",36,0,37,_overflow__6SciBufi
+ 324              		stabs "this:p142",160,0,37,2
+ 325              		stabs "c:p1",160,0,37,6
+ 326              		stabn 192,0,0,LBB11
+ 327              		stabn 224,0,0,LBE11
+ 328              	
+ 329              	Lscope3	stabs "",36,0,0,Lscope3-_overflow__6SciBufi
+ 330              	
+ 331              		global	_underflow__6SciBuf
+ 332              	_underflow__6SciBuf
+  42:SciBuf.cc     **** 
+  43:SciBuf.cc     **** /*
+  44:SciBuf.cc     **** * fill buffer(rxBuffer) from device
+  45:SciBuf.cc     **** * set up pointers to buffer, setg(beg,beg,end)
+  46:SciBuf.cc     **** */
+  47:SciBuf.cc     **** int SciBuf::underflow()
+  48:SciBuf.cc     **** {
+ 333              		stabd 68,0,48
+ 334 00ea 1B94     		leas	-12,s
+ 335              	
+ 336 00ec 6C8A     		std	10,s
+ 337              	
+  49:SciBuf.cc     **** 	char* p(rxBuf);
+ 338              	LBB12	stabd 68,0,49
+ 339 00ee B746     		tfr	d,y
+ 340 00f0 EDE814   		ldy	20,y
+ 341 00f3 6D88     		sty	8,s
+ 342              	
+  50:SciBuf.cc     **** 	do{
+  51:SciBuf.cc     **** 		*p++ = recv();
+ 343              	L152	stabd 68,0,51
+ 344 00f5 EE8A     		ldx	10,s
+ 345 00f7 EEE012   		ldx	18,x
+ 346 00fa EC8A     		ldd	10,s
+ 347 00fc 15E3001A 		jsr	[26,x]
+ 348 0100 ED88     		ldy	8,s
+ 349 0102 6B70     		stab	1,y+
+ 350 0104 6D88     		sty	8,s
+  52:SciBuf.cc     **** 	}while(p < rxEnd && avail());
+ 351              		stabd 68,0,52
+ 352 0106 EE8A     		ldx	10,s
+ 353 0108 ADE016   		cpy	22,x
+ 354 010b 240C     		bhs	L153
+ 355              		
+ 356 010d EDE012   		ldy	18,x
+ 357 0110 B754     		tfr	x,d
+ 358 0112 15EB001C 		jsr	[28,y]
+ 359 0116 D7       		tstb	
+ 360 0117 26DC     		bne	L152
+ 361              		
+ 362              	
+  53:SciBuf.cc     **** 	
+  54:SciBuf.cc     **** 	setg(rxBuf,rxBuf,p);//reset
+ 363              	L153	stabd 68,0,54
+ 364 0119 EE8A     		ldx	10,s
+ 365 011b EEE014   		ldx	20,x
+ 366 011e 6E80     		stx	0,s
+ 367 0120 ED8A     		ldy	10,s
+ 368 0122 EDE814   		ldy	20,y
+ 369 0125 6D82     		sty	2,s
+ 370 0127 EE88     		ldx	8,s
+ 371 0129 6E84     		stx	4,s
+ 372 012b EC8A     		ldd	10,s
+ 373 012d 160000   		jsr	_setg__9streambufPcN21
+  55:SciBuf.cc     **** 	return (rxBuf[0]);
+ 374              		stabd 68,0,55
+ 375 0130 ED8A     		ldy	10,s
+ 376 0132 E6EB0014 		ldab	[20,y]
+ 377 0136 87       		clra	
+ 378              	
+  56:SciBuf.cc     **** }
+ 379              	LBE12	stabd 68,0,56
+ 380              	
+ 381 0137 1B8C     		leas	12,s
+ 382 0139 3D       		rts
+ 383              	
+ 384              		stabs "underflow__6SciBuf:F1",36,0,48,_underflow__6SciBuf
+ 385              		stabs "this:p142",160,0,48,10
+ 386              		stabs "p:52",128,0,49,8
+ 387              		stabn 192,0,0,LBB12
+ 388              		stabn 224,0,0,LBE12
+ 389              	
+ 390              	Lscope4	stabs "",36,0,0,Lscope4-_underflow__6SciBuf
+ 391              	
+ 392              		global	___pure_virtual
+ 393              	___pure_virtual
+  57:SciBuf.cc     **** //it's system dependent pure virtual func
+  58:SciBuf.cc     **** //It seems to be against polymorphism... howerever, it works anyhow.
+  59:SciBuf.cc     **** //error handler that this fucntion may be called others, so this function generated by compiler mus
+  60:SciBuf.cc     **** extern "C" int __pure_virtual(void) {
+ 394              		stabd 68,0,60
+ 395              	
+ 396              	
+  61:SciBuf.cc     **** 	while(1);
+ 397              	LBB13	stabd 68,0,61
+ 398              	
+ 399 013a 20FE     	L158	bra	L158
+ 400              		
+ 401              	
+  62:SciBuf.cc     **** }
+ 402              	LBE13	stabd 68,0,62
+ 403              	
+ 404 013c 3D       		rts
+ 405              	
+ 406              		stabs "__pure_virtual:F1",36,0,60,___pure_virtual
+ 407              		stabn 192,0,0,LBB13
+ 408              		stabn 224,0,0,LBE13
+ 409              	
+ 410              	Lscope5	stabs "",36,0,0,Lscope5-___pure_virtual
+ 411              	
+ 412              		global	___vt_6SciBuf
+ 413              	
+ 414              		section	.const
+ 415              		stabs "__vt_6SciBuf:G151=ar0;0;14;22",32,0,35,0
+ 416              	___vt_6SciBuf
+ 417 0000 0000     		dc.w	0
+ 418 0002 0000     		dc.w	0
+ 419 0004 0065     		dc.w	__$_6SciBuf
+ 420 0006 0000     		dc.w	_in_avail__9streambuf
+ 421 0008 0000     		dc.w	_seekoff__9streambufiQ23ios8seek_diri
+ 422 000a 0000     		dc.w	_seekpos__9streambufii
+ 423 000c 0093     		dc.w	_sync__6SciBuf
+ 424 000e 00CF     		dc.w	_overflow__6SciBufi
+ 425 0010 0000     		dc.w	_xsputn__9streambufPCci
+ 426 0012 00EA     		dc.w	_underflow__6SciBuf
+ 427 0014 0000     		dc.w	_xsgetn__9streambufPci
+ 428 0016 0000     		dc.w	_pbackfail__9streambufi
+ 429 0018 013A     		dc.w	___pure_virtual
+ 430 001a 013A     		dc.w	___pure_virtual
+ 431 001c 013A     		dc.w	___pure_virtual
+ 432              	
+ 433              	
+ 434              		end

@@ -1,0 +1,173 @@
+   1              	gcc2_compiled.:
+   2              	___gnu_compiled_cplusplus
+   3              		stabs "/home/elex8030/jseo/tec/",100,0,0,Ltext0
+   4              		stabs "malloc.cc",100,0,0,Ltext0
+   5              	
+   6              		section	.text
+   7              	
+   8              	Ltext0	stabs "int:t1=r1;-32768;32767;",128,0,0,0
+   9              		stabs "char:t2=r2;0;255;",128,0,0,0
+  10              		stabs "long int:t3=r1;0020000000000;0017777777777;",128,0,0,0
+  11              		stabs "unsigned int:t4=r4;0;65535;",128,0,0,0
+  12              		stabs "long unsigned int:t5=r1;0000000000000;0037777777777;",128,0,0,0
+  13              		stabs "long long int:t6=r1;0020000000000;0017777777777;",128,0,0,0
+  14              		stabs "long long unsigned int:t7=r1;0000000000000;0037777777777;",128,0,0,0
+  15              		stabs "short int:t8=r8;-32768;32767;",128,0,0,0
+  16              		stabs "short unsigned int:t9=r9;0;65535;",128,0,0,0
+  17              		stabs "signed char:t10=r10;-128;127;",128,0,0,0
+  18              		stabs "unsigned char:t11=r11;0;255;",128,0,0,0
+  19              		stabs "float:t12=r1;4;0;",128,0,0,0
+  20              		stabs "double:t13=r1;4;0;",128,0,0,0
+  21              		stabs "long double:t14=r1;4;0;",128,0,0,0
+  22              		stabs "complex int:t15=s4real:1,0,16;imag:1,16,16;;",128,0,0,0
+  23              		stabs "complex float:t16=r16;4;0;",128,0,0,0
+  24              		stabs "complex double:t17=r17;4;0;",128,0,0,0
+  25              		stabs "complex long double:t18=r18;4;0;",128,0,0,0
+  26              		stabs "bool:t19=@s8;-16;",128,0,0,0
+  27              		stabs "void:t20=20",128,0,0,0
+  28              		stabs "__wchar_t:t21=r21;-32768;32767;",128,0,0,0
+  29              		stabs "__vtbl_ptr_type:t22=*23=f1",128,0,0,0
+  30              		stabs "size_t:t4",128,0,5,0
+  31              		stabs "uint16:t4",128,0,6,0
+  32              		stabs "ulong32:t5",128,0,7,0
+  33              		stabs "ptrdiff_t:t1",128,0,8,0
+  34              	
+  35              		global	_malloc__FUi
+  36              	_malloc__FUi
+   1:malloc.cc     **** //ELEX8030 Lab2
+   2:malloc.cc     **** //Jin Won Seo
+   3:malloc.cc     **** //malloc.cc
+   4:malloc.cc     **** //one way allocator only assigns available free space/memory
+   5:malloc.cc     **** //it doesn't delete or free memory
+   6:malloc.cc     **** #include "malloc.h"
+   7:malloc.cc     **** 
+   8:malloc.cc     **** extern char heap_beg[];
+   9:malloc.cc     **** 
+  10:malloc.cc     **** static char* cpFree;	
+  11:malloc.cc     **** static char* cpHeapStart;
+  12:malloc.cc     **** 
+  13:malloc.cc     **** void* malloc(size_t size)
+  14:malloc.cc     **** {
+  37              		stabd 68,0,14
+  38 0000 1B9D     		leas	-3,s
+  39              	
+  40 0002 6C80     		std	0,s
+  41              	
+  15:malloc.cc     **** 	const size_t margin = 512;//margin of stack space, was 20 
+  16:malloc.cc     **** 	//for the first time called
+  17:malloc.cc     **** 	if(cpHeapStart == NULL)
+  42              	LBB2	stabd 68,0,17
+  43 0004 FD0002   		ldy	_cpHeapStart
+  44 0007 260C     		bne	L2
+  45              		
+  18:malloc.cc     **** 	{
+  19:malloc.cc     **** 		 cpHeapStart = &heap_beg[0];
+  46              		stabd 68,0,19
+  47 0009 18030000 		movw	#_heap_beg,_cpHeapStart
+  47      0002
+  20:malloc.cc     **** 		 cpFree = cpHeapStart;
+  48              		stabd 68,0,20
+  49 000f 18030000 		movw	#_heap_beg,_cpFree
+  49      0000
+  50              	
+  21:malloc.cc     **** 	}
+  22:malloc.cc     **** 	
+  23:malloc.cc     **** 	char cDummy = 0;
+  51              	L2	stabd 68,0,23
+  52 0015 18088200 		movb	#0,2,s
+  24:malloc.cc     **** 	char* sp = &cDummy;
+  53              		stabd 68,0,24
+  54 0019 1A82     		leax	2,s
+  25:malloc.cc     **** 	size_t diff = sp - cpFree;
+  55              		stabd 68,0,25
+  56 001b FD0000   		ldy	_cpFree
+  57 001e B754     		tfr	x,d
+  58 0020 35       		pshy	
+  59 0021 A3B1     		subd	2,s+
+  26:malloc.cc     **** 
+  27:malloc.cc     **** 	//if memory space is available
+  28:malloc.cc     **** 	if((diff-margin) >= size)
+  60              		stabd 68,0,28
+  61 0023 C3FE00   		addd	#-512
+  62 0026 AC80     		cpd	0,s
+  63 0028 2404     		bhs	L3
+  64              		
+  29:malloc.cc     **** 	{
+  30:malloc.cc     **** 		//allocate memory
+  31:malloc.cc     **** 		cpHeapStart = cpFree;
+  32:malloc.cc     **** 		cpFree += size;	//move to size of array
+  33:malloc.cc     **** 
+  34:malloc.cc     **** 	}else
+  35:malloc.cc     **** 	{
+  36:malloc.cc     **** 		//out of memory
+  37:malloc.cc     **** 		return NULL;
+  65              		stabd 68,0,37
+  66 002a 87C7     		clrd	
+  67 002c 200C     		bra	L6
+  68              		
+  69              	
+  70              	L3	stabd 68,0,31
+  71 002e 7D0002   		sty	_cpHeapStart
+  72              		stabd 68,0,32
+  73 0031 EC80     		ldd	0,s
+  74 0033 1AEE     		leax	d,y
+  75 0035 7E0000   		stx	_cpFree
+  38:malloc.cc     **** 	}
+  39:malloc.cc     **** 
+  40:malloc.cc     **** 	return cpHeapStart;
+  76              		stabd 68,0,40
+  77 0038 B764     		tfr	y,d
+  78              	
+  79              	L6
+  41:malloc.cc     **** 
+  42:malloc.cc     **** }
+  80              	LBE2	stabd 68,0,42
+  81              	
+  82 003a 1B83     		leas	3,s
+  83 003c 3D       		rts
+  84              	
+  85              		stabs "malloc__FUi:F24=*20",36,0,14,_malloc__FUi
+  86              		stabs "size:p4",160,0,14,0
+  87              		stabs "cDummy:2",128,0,23,2
+  88              		stabs "sp:r25=*2",64,0,24,2
+  89              		stabs "diff:r4",64,0,25,0
+  90              		stabn 192,0,0,LBB2
+  91              		stabn 224,0,0,LBE2
+  92              	
+  93              	Lscope0	stabs "",36,0,0,Lscope0-_malloc__FUi
+  94              	
+  95              		global	_free__FPv
+  96              	_free__FPv
+  43:malloc.cc     **** //one-way doesn't delete memory
+  44:malloc.cc     **** void free(void* ipDel)
+  45:malloc.cc     **** {
+  97              		stabd 68,0,45
+  98              	
+  99              	
+  46:malloc.cc     **** 	//do nothing
+  47:malloc.cc     **** 	ipDel = ipDel;
+ 100              	LBB3	stabd 68,0,47
+ 101              	
+  48:malloc.cc     **** 	//	    delete[] (ipDel);    
+  49:malloc.cc     **** }
+ 102              	LBE3	stabd 68,0,49
+ 103              	
+ 104 003d 3D       		rts
+ 105              	
+ 106              		stabs "free__FPv:F20",36,0,45,_free__FPv
+ 107              		stabs "ipDel:P24",64,0,45,0
+ 108              		stabn 192,0,0,LBB3
+ 109              		stabn 224,0,0,LBE3
+ 110              	
+ 111              	Lscope1	stabs "",36,0,0,Lscope1-_free__FPv
+ 112              		stabs "cpFree:S25",40,0,10,_cpFree
+ 113              	
+ 114              		section	.bss
+ 115              	_cpFree
+ 116 0000 0000     		ds.b	2
+ 117              		stabs "cpHeapStart:S25",40,0,11,_cpHeapStart
+ 118              	_cpHeapStart
+ 119 0002 0000     		ds.b	2
+ 120              	
+ 121              	
+ 122              		end

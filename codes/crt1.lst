@@ -1,0 +1,210 @@
+   1              	gcc2_compiled.:
+   2              	___gnu_compiled_cplusplus
+   3              		stabs "/home/elex8030/jseo/tec/",100,0,0,Ltext0
+   4              		stabs "crt1.cc",100,0,0,Ltext0
+   5              	
+   6              		section	.text
+   7              	
+   8              	Ltext0	stabs "int:t1=r1;-32768;32767;",128,0,0,0
+   9              		stabs "char:t2=r2;0;255;",128,0,0,0
+  10              		stabs "long int:t3=r1;0020000000000;0017777777777;",128,0,0,0
+  11              		stabs "unsigned int:t4=r4;0;65535;",128,0,0,0
+  12              		stabs "long unsigned int:t5=r1;0000000000000;0037777777777;",128,0,0,0
+  13              		stabs "long long int:t6=r1;0020000000000;0017777777777;",128,0,0,0
+  14              		stabs "long long unsigned int:t7=r1;0000000000000;0037777777777;",128,0,0,0
+  15              		stabs "short int:t8=r8;-32768;32767;",128,0,0,0
+  16              		stabs "short unsigned int:t9=r9;0;65535;",128,0,0,0
+  17              		stabs "signed char:t10=r10;-128;127;",128,0,0,0
+  18              		stabs "unsigned char:t11=r11;0;255;",128,0,0,0
+  19              		stabs "float:t12=r1;4;0;",128,0,0,0
+  20              		stabs "double:t13=r1;4;0;",128,0,0,0
+  21              		stabs "long double:t14=r1;4;0;",128,0,0,0
+  22              		stabs "complex int:t15=s4real:1,0,16;imag:1,16,16;;",128,0,0,0
+  23              		stabs "complex float:t16=r16;4;0;",128,0,0,0
+  24              		stabs "complex double:t17=r17;4;0;",128,0,0,0
+  25              		stabs "complex long double:t18=r18;4;0;",128,0,0,0
+  26              		stabs "bool:t19=@s8;-16;",128,0,0,0
+  27              		stabs "void:t20=20",128,0,0,0
+  28              		stabs "__wchar_t:t21=r21;-32768;32767;",128,0,0,0
+  29              		stabs "__vtbl_ptr_type:t22=*23=f1",128,0,0,0
+  30              		stabs "pFunc:t24=*25=f20",128,0,6,0
+  31              	
+  32              		global	_crt1__Fv
+  33              	_crt1__Fv
+   1:crt1.cc       **** //crt1()
+   2:crt1.cc       **** //Lab 1
+   3:crt1.cc       **** //Jin Won Seo
+   4:crt1.cc       **** #include "main.h"
+   5:crt1.cc       **** 
+   6:crt1.cc       **** typedef void(*pFunc)(void);
+   7:crt1.cc       **** 
+   8:crt1.cc       **** extern char bss_beg[], bss_end[],heap_beg[];
+   9:crt1.cc       **** 
+  10:crt1.cc       **** extern pFunc ctor_beg[], ctor_end[], dtor_beg[], dtor_end[];//for statically-allocated object
+  11:crt1.cc       **** 
+  12:crt1.cc       **** 
+  13:crt1.cc       **** //initialize from bss_beg to bss_end with zero
+  14:crt1.cc       **** int crt1()
+  15:crt1.cc       **** {
+  34              		stabd 68,0,15
+  35 0000 1B92     		leas	-14,s
+  36              	
+  37              	
+  16:crt1.cc       **** 	char* bp = &bss_beg[0];
+  38              	LBB2	stabd 68,0,16
+  39 0002 CD0000   		ldy	#_bss_beg
+  40 0005 6D82     		sty	2,s
+  17:crt1.cc       **** 	char* ep = &bss_end[0];
+  41              		stabd 68,0,17
+  42 0007 CC0000   		ldd	#_bss_end
+  43 000a 6C8C     		std	12,s
+  18:crt1.cc       **** 	char* hb = &heap_beg[0];//heap begin
+  44              		stabd 68,0,18
+  45 000c CE0000   		ldx	#_heap_beg
+  19:crt1.cc       **** 	char* he = reinterpret_cast<char*>(0x7fff);//heap end
+  46              		stabd 68,0,19
+  47 000f CD7FFF   		ldy	#32767
+  48 0012 6D80     		sty	0,s
+  20:crt1.cc       **** 	
+  21:crt1.cc       **** 	pFunc* cb = &ctor_beg[0];//begin of ctor
+  49              		stabd 68,0,21
+  50 0014 CD0000   		ldy	#_ctor_beg
+  51 0017 6D8A     		sty	10,s
+  22:crt1.cc       **** 	pFunc* ce = &ctor_end[0];//end of ctor
+  52              		stabd 68,0,22
+  53 0019 CC0000   		ldd	#_ctor_end
+  54 001c 6C88     		std	8,s
+  23:crt1.cc       **** 	pFunc* db = &dtor_beg[0];
+  55              		stabd 68,0,23
+  56 001e CD0000   		ldy	#_dtor_beg
+  57 0021 6D86     		sty	6,s
+  24:crt1.cc       **** 	pFunc* de = &dtor_end[0];	
+  58              		stabd 68,0,24
+  59 0023 CC0000   		ldd	#_dtor_end
+  60 0026 6C84     		std	4,s
+  25:crt1.cc       **** 	
+  26:crt1.cc       **** 	while(bp <= ep)
+  61              		stabd 68,0,26
+  62 0028 ED82     		ldy	2,s
+  63 002a 8D0000   		cpy	#_bss_end
+  64 002d 2211     		bhi	L21
+  65              		
+  66              	
+  27:crt1.cc       **** 	{
+  28:crt1.cc       **** 		*bp = 0;
+  67              	L4	stabd 68,0,28
+  68 002f ED82     		ldy	2,s
+  69 0031 C7       		clrb	
+  70 0032 6B70     		stab	1,y+
+  71 0034 6D82     		sty	2,s
+  29:crt1.cc       **** 		bp++;
+  72              		stabd 68,0,29
+  73 0036 AD8C     		cpy	12,s
+  74 0038 23F5     		bls	L4
+  75              		
+  30:crt1.cc       **** 	}
+  31:crt1.cc       **** 
+  32:crt1.cc       **** 	while(hb <= he)
+  76              		stabd 68,0,32
+  77 003a 2004     		bra	L21
+  78              		
+  79              	
+  33:crt1.cc       **** 	{
+  34:crt1.cc       **** 		*hb = 0x55;
+  80              	L8	stabd 68,0,34
+  81 003c 18083055 		movb	#85,1,x+
+  35:crt1.cc       **** 		hb++;
+  82              		stabd 68,0,35
+  83              	
+  84 0040 AE80     	L21	cpx	0,s
+  85 0042 23F8     		bls	L8
+  86              		
+  36:crt1.cc       **** 	}
+  37:crt1.cc       **** 
+  38:crt1.cc       **** 	/*
+  39:crt1.cc       **** 	*execute ctor of statically allocated Task object before main()
+  40:crt1.cc       **** 	*/
+  41:crt1.cc       **** 	while(cb <= ce)
+  87              		stabd 68,0,41
+  88 0044 2008     		bra	L22
+  89              		
+  90              	
+  42:crt1.cc       **** 	{
+  43:crt1.cc       **** 		(*cb)();//execute the function pointed by Function pointer
+  91              	L12	stabd 68,0,43
+  92 0046 ED8A     		ldy	10,s
+  93 0048 EE71     		ldx	2,y+
+  94 004a 6D8A     		sty	10,s
+  95 004c 1500     		jsr	0,x
+  44:crt1.cc       **** 		cb++;
+  96              		stabd 68,0,44
+  97              	
+  98 004e ED8A     	L22	ldy	10,s
+  99 0050 AD88     		cpy	8,s
+ 100 0052 23F2     		bls	L12
+ 101              		
+  45:crt1.cc       **** 	}
+  46:crt1.cc       **** 	
+  47:crt1.cc       **** 	asm("cli");// enable global interrupts
+ 102              		stabd 68,0,47
+ 103 0054 10EF     		cli
+  48:crt1.cc       **** 
+  49:crt1.cc       **** 	main();
+ 104              		stabd 68,0,49
+ 105 0056 160000   		jsr	_main
+  50:crt1.cc       **** 
+  51:crt1.cc       **** 	asm("sei"); // disable globa interrupts
+ 106              		stabd 68,0,51
+ 107 0059 1410     		sei
+  52:crt1.cc       **** 
+  53:crt1.cc       **** 	/*
+  54:crt1.cc       **** 	*execute dtor of statically allocated Task object after main()
+  55:crt1.cc       **** 	*/
+  56:crt1.cc       **** 	while(db <= de)
+ 108              		stabd 68,0,56
+ 109 005b 2008     		bra	L23
+ 110              		
+ 111              	
+  57:crt1.cc       **** 	{
+  58:crt1.cc       **** 		(*db)();//execute the function pointed by Function pointer
+ 112              	L16	stabd 68,0,58
+ 113 005d ED86     		ldy	6,s
+ 114 005f EE71     		ldx	2,y+
+ 115 0061 6D86     		sty	6,s
+ 116 0063 1500     		jsr	0,x
+  59:crt1.cc       **** 		db++;
+ 117              		stabd 68,0,59
+ 118              	
+ 119 0065 ED86     	L23	ldy	6,s
+ 120 0067 AD84     		cpy	4,s
+ 121 0069 23F2     		bls	L16
+ 122              		
+  60:crt1.cc       **** 	}
+  61:crt1.cc       **** 
+  62:crt1.cc       **** 	return 0;
+ 123              		stabd 68,0,62
+ 124 006b 87C7     		clrd	
+ 125              	
+  63:crt1.cc       **** 
+  64:crt1.cc       **** }
+ 126              	LBE2	stabd 68,0,64
+ 127              	
+ 128 006d 1B8E     		leas	14,s
+ 129 006f 3D       		rts
+ 130              	
+ 131              		stabs "crt1__Fv:F1",36,0,15,_crt1__Fv
+ 132              		stabs "bp:26=*2",128,0,16,2
+ 133              		stabs "ep:26",128,0,17,12
+ 134              		stabs "hb:r26",64,0,18,2
+ 135              		stabs "he:r27=*26",64,0,19,3
+ 136              		stabs "cb:28=*24",128,0,21,10
+ 137              		stabs "ce:28",128,0,22,8
+ 138              		stabs "db:28",128,0,23,6
+ 139              		stabs "de:28",128,0,24,4
+ 140              		stabn 192,0,0,LBB2
+ 141              		stabn 224,0,0,LBE2
+ 142              	
+ 143              	Lscope0	stabs "",36,0,0,Lscope0-_crt1__Fv
+ 144              	
+ 145              	
+ 146              		end

@@ -1,0 +1,1019 @@
+   1              	gcc2_compiled.:
+   2              	___gnu_compiled_cplusplus
+   3              		stabs "/home/elex8030/jseo/tec/",100,0,0,Ltext0
+   4              		stabs "hc12ictlr.cc",100,0,0,Ltext0
+   5              	
+   6              		section	.text
+   7              	
+   8              	Ltext0	stabs "int:t1=r1;-32768;32767;",128,0,0,0
+   9              		stabs "char:t2=r2;0;255;",128,0,0,0
+  10              		stabs "long int:t3=r1;0020000000000;0017777777777;",128,0,0,0
+  11              		stabs "unsigned int:t4=r4;0;65535;",128,0,0,0
+  12              		stabs "long unsigned int:t5=r1;0000000000000;0037777777777;",128,0,0,0
+  13              		stabs "long long int:t6=r1;0020000000000;0017777777777;",128,0,0,0
+  14              		stabs "long long unsigned int:t7=r1;0000000000000;0037777777777;",128,0,0,0
+  15              		stabs "short int:t8=r8;-32768;32767;",128,0,0,0
+  16              		stabs "short unsigned int:t9=r9;0;65535;",128,0,0,0
+  17              		stabs "signed char:t10=r10;-128;127;",128,0,0,0
+  18              		stabs "unsigned char:t11=r11;0;255;",128,0,0,0
+  19              		stabs "float:t12=r1;4;0;",128,0,0,0
+  20              		stabs "double:t13=r1;4;0;",128,0,0,0
+  21              		stabs "long double:t14=r1;4;0;",128,0,0,0
+  22              		stabs "complex int:t15=s4real:1,0,16;imag:1,16,16;;",128,0,0,0
+  23              		stabs "complex float:t16=r16;4;0;",128,0,0,0
+  24              		stabs "complex double:t17=r17;4;0;",128,0,0,0
+  25              		stabs "complex long double:t18=r18;4;0;",128,0,0,0
+  26              		stabs "bool:t19=@s8;-16;",128,0,0,0
+  27              		stabs "void:t20=20",128,0,0,0
+  28              		stabs "__wchar_t:t21=r21;-32768;32767;",128,0,0,0
+  29              		stabs "__vtbl_ptr_type:t22=*23=f1",128,0,0,0
+  30              		stabs "IoMask:t1",128,0,39,0
+  31              		stabs "pwmreg:T24=u2byte:25=ar0;0;1;2,0,16;word:4,0,16;\\",128,0,0,0
+  32              		stabs "__as::26=##27=&24;:RC6pwmreg;2A.;pwmreg::28=##29=*24;:RC6pwmreg;2A.30=##29;:;2A.;;",128,0,0
+  33              		stabs "pwmreg:Tt24",128,0,429,0
+  34              		stabs "sciport:Tt31=s8scbd:1,0,16;sccr1:2,16,8;\\",128,0,0,0
+  35              		stabs "loops:/21:loops;woms:/21:woms;rsrc:/21:rsrc;\\",128,0,0,0
+  36              		stabs "m:/21:m;wake:/21:wake;ilt:/21:ilt;\\",128,0,0,0
+  37              		stabs "pe:/21:pe;pt:/21:pt;sccr2:2,24,8;\\",128,0,0,0
+  38              		stabs "tie:/21:tie;tcie:/21:tcie;rie:/21:rie;\\",128,0,0,0
+  39              		stabs "ilie:/21:ilie;te:/21:te;re:/21:re;\\",128,0,0,0
+  40              		stabs "rwu:/21:rwu;sbk:/21:sbk;scsr1:2,32,8;\\",128,0,0,0
+  41              		stabs "tdre:/21:tdre;tc:/21:tc;rdrf:/21:rdrf;\\",128,0,0,0
+  42              		stabs "idle:/21:idle;or:/21:or;nf:/21:nf;\\",128,0,0,0
+  43              		stabs "fe:/21:fe;pf:/21:pf;scsr2:2,40,8;\\",128,0,0,0
+  44              		stabs "raf:/21:raf;scdrh:2,48,8;r8:/21:r8;\\",128,0,0,0
+  45              		stabs "t8:/21:t8;scdrl:2,56,8;__as::32=##33=&31;:RC7sciport;2A.;\\",128,0,0,0
+  46              		stabs "sciport::34=##35=*31;:RC7sciport;2A.36=##35;:;2A.;;",128,0,637,0
+  47              		stabs "spiport:Tt37=s6spcr1:2,0,8;spie:/21:spie;\\",128,0,0,0
+  48              		stabs "spe:/21:spe;swom:/21:swom;mstr:/21:mstr;\\",128,0,0,0
+  49              		stabs "cpol:/21:cpol;cpha:/21:cpha;ssoe:/21:ssoe;\\",128,0,0,0
+  50              		stabs "lsbf:/21:lsbf;spcr2:2,8,8;pups:/21:pups;\\",128,0,0,0
+  51              		stabs "rds:/21:rds;spc0:/21:spc0;spbr:2,16,8;\\",128,0,0,0
+  52              		stabs "spr31:/21:spr31;spr62:/21:spr62;spr125:/21:spr125;\\",128,0,0,0
+  53              		stabs "spr250:/21:spr250;spr500:/21:spr500;\\",128,0,0,0
+  54              		stabs "spr1000:/21:spr1000;spr2000:/21:spr2000;\\",128,0,0,0
+  55              		stabs "spr4000:/21:spr4000;spsr:2,24,8;spif:/21:spif;\\",128,0,0,0
+  56              		stabs "wcol:/21:wcol;modf:/21:modf;rsvd4:2,32,8;\\",128,0,0,0
+  57              		stabs "spdr:2,40,8;__as::38=##39=&37;:RC7spiport;2A.;spiport::40=##41=*37;:RC7spiport;2A.\\",128,0
+  58              		stabs "42=##41;:;2A.;;",128,0,690,0
+  59              		stabs "size_t:t4",128,0,5,0
+  60              		stabs "uint16:t4",128,0,6,0
+  61              		stabs "ulong32:t5",128,0,7,0
+  62              		stabs "ptrdiff_t:t1",128,0,8,0
+  63              		stabs "Isr:Tt43=s6ictlr:/044=&45=xsIctlr:,0,16;index:/04,16,16;\\",128,0,0,0
+  64              		stabs "$vf43:46=*47=ar0;0;3;22,32;__as::48=##49=&43;:RC3Isr;2A.;Isr::50=##51=*43;:RC3Isr;2A.;\\",1
+  65              		stabs "handler::52=##20;:;0A*2;43;;Isr::53=##51;:R5IctlrUi;1A.54=#43,20,51,1,20;:_$_3Isr;1A*3;43;;
+  66              		stabs "Ictlr:Tt45=s6length:/04,0,16;isrTable:/055=*51,16,16;\\",128,0,0,0
+  67              		stabs "$vf45:56=*57=ar0;0;2;22,32;__as::58=##44;:RC5Ictlr;2A.;Ictlr::59=##60=*45;:RC5Ictlr;2A.;\\"
+  68              		stabs "runHandler::61=##20;:Ui;1A.;Ictlr::62=##60;:Ui;2A.63=#45,20,60,1,20;:_$_5Ictlr;2A*2;45;;\\"
+  69              		stabs "attach::64=##20;:P3Isr;2A.;detach::64:P3Isr;2A.;;~%45;",128,0,41,0
+  70              		stabs "Sources:t65=eisBdl:0,isAtd:1,isSc0:2,\\",128,0,0,0
+  71              		stabs "isSpi:3,isPai:4,isPao:5,isTof:6,\\",128,0,0,0
+  72              		stabs "isTc7:7,isTc6:8,isTc5:9,isTc4:10,\\",128,0,0,0
+  73              		stabs "isTc3:11,isTc2:12,isTc1:13,isTc0:14,\\",128,0,0,0
+  74              		stabs "isRti:15,isIrq:16,isNumSources:17,;",128,0,27,0
+  75              		stabs "HC12Ictlr:Tt66=s6!1,020,45;theHC12Ictlr:/067=*66:_9HC12Ictlr$theHC12Ictlr;\\",128,0,0,0
+  76              		stabs "__as::68=##69=&66;:RC9HC12Ictlr;2A.;HC12Ictlr::70=##67;:RC9HC12Ictlr;2A.;handlerTable::71=f
+  77              		stabs "HC12Ictlr::72=##67;:;2A.73=#66,20,67,1,20;:_$_9HC12Ictlr;2A*2;45;;;~%45;",128,0,47,0
+  78              	
+  79              		global	___9HC12Ictlr
+  80              	___9HC12Ictlr
+   1:hc12ictlr.cc  **** // $Id: hc12ictlr.cc,v 1.2 2004/10/15 18:44:08 querbach Exp $
+   2:hc12ictlr.cc  **** 
+   3:hc12ictlr.cc  **** // hc12ictlr.cc			   Copyright (C) 2002, Real-Time Systems Inc.
+   4:hc12ictlr.cc  **** //------------------------------------------- All Rights Reserved -----------
+   5:hc12ictlr.cc  **** //
+   6:hc12ictlr.cc  **** //	68HC12 Interrupt Controller
+   7:hc12ictlr.cc  **** //
+   8:hc12ictlr.cc  **** //---------------------------------------------------------------------------
+   9:hc12ictlr.cc  **** 
+  10:hc12ictlr.cc  **** #include "chipio.h"		// DEBUG
+  11:hc12ictlr.cc  **** #include "hc12ictlr.h"
+  12:hc12ictlr.cc  **** 
+  13:hc12ictlr.cc  **** 
+  14:hc12ictlr.cc  **** HC12Ictlr* HC12Ictlr::theHC12Ictlr;
+  15:hc12ictlr.cc  **** 
+  16:hc12ictlr.cc  **** 
+  17:hc12ictlr.cc  **** HC12Ictlr::HC12Ictlr()
+  18:hc12ictlr.cc  **** : Ictlr(isNumSources)
+  81              		stabd 68,0,18
+  82 0000 1B9B     		leas	-5,s
+  83              	
+  84 0002 6C83     		std	3,s
+  85 0004 18008000 		movw	#17,0,s
+  85      11
+  86 0009 160000   		jsr	___5IctlrUi
+  87 000c CC0000   		ldd	#___vt_9HC12Ictlr
+  88 000f ED83     		ldy	3,s
+  89 0011 6C44     		std	4,y
+  19:hc12ictlr.cc  **** {
+  90              		stabd 68,0,19
+  91              	
+  20:hc12ictlr.cc  ****   theHC12Ictlr = this;
+  92              	LBB2	stabd 68,0,20
+  93 0013 7D0000   		sty	__9HC12Ictlr$theHC12Ictlr
+  21:hc12ictlr.cc  ****   ddrdlc |= (1 << 5);		// DEBUG
+  94              		stabd 68,0,21
+  95 0016 F60000   		ldab	_ddrdlc
+  96 0019 CA20     		orab	#32
+  97 001b 7B0000   		stab	_ddrdlc
+  98              	
+  99 001e B764     	LBE2	tfr	y,d
+  22:hc12ictlr.cc  **** }
+ 100              		stabd 68,0,22
+ 101              	
+ 102 0020 1B85     		leas	5,s
+ 103 0022 3D       		rts
+ 104              	
+ 105              		stabs "__9HC12Ictlr:F67",36,0,18,___9HC12Ictlr
+ 106              		stabs "this:p67",160,0,18,3
+ 107              		stabn 192,0,0,LBB2
+ 108              		stabn 224,0,0,LBE2
+ 109              	
+ 110              	Lscope0	stabs "",36,0,0,Lscope0-___9HC12Ictlr
+ 111              	
+ 112              		global	__$_9HC12Ictlr
+ 113              	__$_9HC12Ictlr
+  23:hc12ictlr.cc  **** 
+  24:hc12ictlr.cc  **** 
+  25:hc12ictlr.cc  **** HC12Ictlr::~HC12Ictlr()
+  26:hc12ictlr.cc  **** {
+ 114              		stabd 68,0,26
+ 115 0023 1B9E     		leas	-2,s
+ 116              	
+ 117 0025 B745     		tfr	d,x
+ 118 0027 18000400 		movw	#___vt_9HC12Ictlr,4,x
+ 118      00
+ 119              	
+  27:hc12ictlr.cc  ****   theHC12Ictlr = 0;
+ 120              	LBB3	stabd 68,0,27
+ 121 002c 18030000 		movw	#0,__9HC12Ictlr$theHC12Ictlr
+ 121      0000
+ 122              	
+ 123 0032 18028480 	LBE3	movw	4,s,0,s
+ 124 0036 160000   		jsr	__$_5Ictlr
+  28:hc12ictlr.cc  **** }
+ 125              		stabd 68,0,28
+ 126              	
+ 127 0039 1B82     		leas	2,s
+ 128 003b 3D       		rts
+ 129              	
+ 130              		stabs "_$_9HC12Ictlr:F20",36,0,26,__$_9HC12Ictlr
+ 131              		stabs "this:P67",64,0,26,2
+ 132              		stabs "__in_chrg:p1",160,0,26,4
+ 133              		stabn 192,0,0,LBB3
+ 134              		stabn 224,0,0,LBE3
+ 135              	
+ 136              	Lscope1	stabs "",36,0,0,Lscope1-__$_9HC12Ictlr
+ 137              	
+ 138              		global	_handlerTable__9HC12Ictlr
+ 139              	_handlerTable__9HC12Ictlr
+  29:hc12ictlr.cc  **** 
+  30:hc12ictlr.cc  **** 
+  31:hc12ictlr.cc  **** // GCC won't allow asm() statements except inside functions, so we define a
+  32:hc12ictlr.cc  **** // dummy function to allow wrapping the first-level interrupt handlers in
+  33:hc12ictlr.cc  **** // assembly language.  Note from the declaration in the header file that
+  34:hc12ictlr.cc  **** // this "function" is never called; it's just a bag we can put the assembly
+  35:hc12ictlr.cc  **** // code in.
+  36:hc12ictlr.cc  **** 
+  37:hc12ictlr.cc  **** void HC12Ictlr::handlerTable()
+  38:hc12ictlr.cc  **** {
+ 140              		stabd 68,0,38
+ 141              	
+ 142              	
+  39:hc12ictlr.cc  **** 
+  40:hc12ictlr.cc  **** #define	makeVsr(source)							\
+  41:hc12ictlr.cc  ****   asm("		public	vsr%c0"	: : "i" (HC12Ictlr::source)	);	\
+  42:hc12ictlr.cc  ****   asm("\nvsr%c0"		: : "i" (HC12Ictlr::source)	);	\
+  43:hc12ictlr.cc  ****   portdlc |= (1 << 5);			/* DEBUG */			\
+  44:hc12ictlr.cc  ****   theHC12Ictlr->runHandler(source);					\
+  45:hc12ictlr.cc  ****   portdlc &= ~(1 << 5);			/* DEBUG */			\
+  46:hc12ictlr.cc  ****   asm("rti");
+  47:hc12ictlr.cc  **** 
+  48:hc12ictlr.cc  ****   makeVsr(isBdl);
+ 143              	LBB4	stabd 68,0,48
+ 144              				public	vsr0
+ 145              		
+ 146              	vsr0
+ 147 003c F60000   		ldab	_portdlc
+ 148 003f CA20     		orab	#32
+ 149 0041 7B0000   		stab	_portdlc
+ 150              		stabs "Isr.h",132,0,0,Ltext1
+ 151              	
+   1:Isr.h         **** //lab6
+   2:Isr.h         **** //Jin Won Seo
+   3:Isr.h         **** #ifndef ISR_H
+   4:Isr.h         **** #define ISR_H
+   5:Isr.h         **** 
+   6:Isr.h         **** #include "stddef.h"
+   7:Isr.h         **** 
+   8:Isr.h         **** class Isr
+   9:Isr.h         **** {
+  10:Isr.h         **** 	//compiler expects a class declaration
+  11:Isr.h         **** 	class Ictlr& ictlr;//controller that is attached to
+  12:Isr.h         **** 	uint16 index;//index in my controller's table
+  13:Isr.h         **** 	friend class Ictlr;
+  14:Isr.h         **** 	virtual void handler()=0;//pure virtual
+  15:Isr.h         **** 	
+  16:Isr.h         **** 	protected:
+  17:Isr.h         **** 	Isr(Ictlr&, uint16 index);
+  18:Isr.h         **** 	virtual ~Isr();
+  19:Isr.h         **** };
+  20:Isr.h         **** 
+  21:Isr.h         **** class Ictlr
+  22:Isr.h         **** {
+  23:Isr.h         **** 	uint16 length;//# of entries in table
+  24:Isr.h         **** 	Isr** isrTable;
+  25:Isr.h         **** 
+  26:Isr.h         **** 	protected:
+  27:Isr.h         **** 	void runHandler(uint16 index)
+  28:Isr.h         **** 	{
+ 152              	Ltext1	stabd 68,0,28
+ 153 0044 FD0000   		ldy	__9HC12Ictlr$theHC12Ictlr
+ 154              	
+ 155              	LBB5
+  29:Isr.h         **** 		if(isrTable[index])
+ 156              	LBB6	stabd 68,0,29
+ 157 0047 EDEB0002 		ldy	[2,y]
+ 158 004b 270A     		beq	L28
+ 159              		
+  30:Isr.h         **** 			isrTable[index]->handler();
+ 160              		stabd 68,0,30
+ 161 004d EE44     		ldx	4,y
+ 162 004f B764     		tfr	y,d
+ 163 0051 15E30004 		jsr	[4,x]
+ 164 0055 2002     		bra	L33
+ 165              		
+  31:Isr.h         **** 		else
+  32:Isr.h         **** 			while(1);//do something about "wild" interrupt
+ 166              		stabd 68,0,32
+ 167              	
+ 168 0057 20FE     	L28	bra	L28
+ 169              		
+ 170              	
+  33:Isr.h         **** 	}
+ 171              	LBE6	stabd 68,0,33
+ 172              	
+ 173              	L33
+ 174              	LBE5	stabs "hc12ictlr.cc",132,0,0,Ltext2
+ 175              	
+ 176              	Ltext2	stabd 68,0,48
+ 177 0059 F60000   		ldab	_portdlc
+ 178 005c C4DF     		andb	#223
+ 179 005e 7B0000   		stab	_portdlc
+ 180 0061 0B       		rti
+  49:hc12ictlr.cc  ****   makeVsr(isAtd);
+ 181              		stabd 68,0,49
+ 182              				public	vsr1
+ 183              		
+ 184              	vsr1
+ 185 0062 F60000   		ldab	_portdlc
+ 186 0065 CA20     		orab	#32
+ 187 0067 7B0000   		stab	_portdlc
+ 188              		stabs "Isr.h",132,0,0,Ltext3
+ 189              	
+ 190              	Ltext3	stabd 68,0,28
+ 191 006a FD0000   		ldy	__9HC12Ictlr$theHC12Ictlr
+ 192              	
+ 193              	LBB7
+ 194              	LBB8	stabd 68,0,29
+ 195 006d ED42     		ldy	2,y
+ 196 006f ED42     		ldy	2,y
+ 197 0071 270A     		beq	L36
+ 198              		
+ 199              		stabd 68,0,30
+ 200 0073 EE44     		ldx	4,y
+ 201 0075 B764     		tfr	y,d
+ 202 0077 15E30004 		jsr	[4,x]
+ 203 007b 2002     		bra	L41
+ 204              		
+ 205              		stabd 68,0,32
+ 206              	
+ 207 007d 20FE     	L36	bra	L36
+ 208              		
+ 209              	
+ 210              	LBE8	stabd 68,0,33
+ 211              	
+ 212              	L41
+ 213              	LBE7	stabs "hc12ictlr.cc",132,0,0,Ltext4
+ 214              	
+ 215              	Ltext4	stabd 68,0,49
+ 216 007f F60000   		ldab	_portdlc
+ 217 0082 C4DF     		andb	#223
+ 218 0084 7B0000   		stab	_portdlc
+ 219 0087 0B       		rti
+  50:hc12ictlr.cc  ****   makeVsr(isSc0);
+ 220              		stabd 68,0,50
+ 221              				public	vsr2
+ 222              		
+ 223              	vsr2
+ 224 0088 F60000   		ldab	_portdlc
+ 225 008b CA20     		orab	#32
+ 226 008d 7B0000   		stab	_portdlc
+ 227              		stabs "Isr.h",132,0,0,Ltext5
+ 228              	
+ 229              	Ltext5	stabd 68,0,28
+ 230 0090 FD0000   		ldy	__9HC12Ictlr$theHC12Ictlr
+ 231              	
+ 232              	LBB9
+ 233              	LBB10	stabd 68,0,29
+ 234 0093 ED42     		ldy	2,y
+ 235 0095 ED44     		ldy	4,y
+ 236 0097 270A     		beq	L44
+ 237              		
+ 238              		stabd 68,0,30
+ 239 0099 EE44     		ldx	4,y
+ 240 009b B764     		tfr	y,d
+ 241 009d 15E30004 		jsr	[4,x]
+ 242 00a1 2002     		bra	L49
+ 243              		
+ 244              		stabd 68,0,32
+ 245              	
+ 246 00a3 20FE     	L44	bra	L44
+ 247              		
+ 248              	
+ 249              	LBE10	stabd 68,0,33
+ 250              	
+ 251              	L49
+ 252              	LBE9	stabs "hc12ictlr.cc",132,0,0,Ltext6
+ 253              	
+ 254              	Ltext6	stabd 68,0,50
+ 255 00a5 F60000   		ldab	_portdlc
+ 256 00a8 C4DF     		andb	#223
+ 257 00aa 7B0000   		stab	_portdlc
+ 258 00ad 0B       		rti
+  51:hc12ictlr.cc  ****   makeVsr(isSpi);
+ 259              		stabd 68,0,51
+ 260              				public	vsr3
+ 261              		
+ 262              	vsr3
+ 263 00ae F60000   		ldab	_portdlc
+ 264 00b1 CA20     		orab	#32
+ 265 00b3 7B0000   		stab	_portdlc
+ 266              		stabs "Isr.h",132,0,0,Ltext7
+ 267              	
+ 268              	Ltext7	stabd 68,0,28
+ 269 00b6 FD0000   		ldy	__9HC12Ictlr$theHC12Ictlr
+ 270              	
+ 271              	LBB11
+ 272              	LBB12	stabd 68,0,29
+ 273 00b9 ED42     		ldy	2,y
+ 274 00bb ED46     		ldy	6,y
+ 275 00bd 270A     		beq	L52
+ 276              		
+ 277              		stabd 68,0,30
+ 278 00bf EE44     		ldx	4,y
+ 279 00c1 B764     		tfr	y,d
+ 280 00c3 15E30004 		jsr	[4,x]
+ 281 00c7 2002     		bra	L57
+ 282              		
+ 283              		stabd 68,0,32
+ 284              	
+ 285 00c9 20FE     	L52	bra	L52
+ 286              		
+ 287              	
+ 288              	LBE12	stabd 68,0,33
+ 289              	
+ 290              	L57
+ 291              	LBE11	stabs "hc12ictlr.cc",132,0,0,Ltext8
+ 292              	
+ 293              	Ltext8	stabd 68,0,51
+ 294 00cb F60000   		ldab	_portdlc
+ 295 00ce C4DF     		andb	#223
+ 296 00d0 7B0000   		stab	_portdlc
+ 297 00d3 0B       		rti
+  52:hc12ictlr.cc  ****   makeVsr(isPai);
+ 298              		stabd 68,0,52
+ 299              				public	vsr4
+ 300              		
+ 301              	vsr4
+ 302 00d4 F60000   		ldab	_portdlc
+ 303 00d7 CA20     		orab	#32
+ 304 00d9 7B0000   		stab	_portdlc
+ 305              		stabs "Isr.h",132,0,0,Ltext9
+ 306              	
+ 307              	Ltext9	stabd 68,0,28
+ 308 00dc FD0000   		ldy	__9HC12Ictlr$theHC12Ictlr
+ 309              	
+ 310              	LBB13
+ 311              	LBB14	stabd 68,0,29
+ 312 00df ED42     		ldy	2,y
+ 313 00e1 ED48     		ldy	8,y
+ 314 00e3 270A     		beq	L60
+ 315              		
+ 316              		stabd 68,0,30
+ 317 00e5 EE44     		ldx	4,y
+ 318 00e7 B764     		tfr	y,d
+ 319 00e9 15E30004 		jsr	[4,x]
+ 320 00ed 2002     		bra	L65
+ 321              		
+ 322              		stabd 68,0,32
+ 323              	
+ 324 00ef 20FE     	L60	bra	L60
+ 325              		
+ 326              	
+ 327              	LBE14	stabd 68,0,33
+ 328              	
+ 329              	L65
+ 330              	LBE13	stabs "hc12ictlr.cc",132,0,0,Ltext10
+ 331              	
+ 332              	Ltext10	stabd 68,0,52
+ 333 00f1 F60000   		ldab	_portdlc
+ 334 00f4 C4DF     		andb	#223
+ 335 00f6 7B0000   		stab	_portdlc
+ 336 00f9 0B       		rti
+  53:hc12ictlr.cc  ****   makeVsr(isPao);
+ 337              		stabd 68,0,53
+ 338              				public	vsr5
+ 339              		
+ 340              	vsr5
+ 341 00fa F60000   		ldab	_portdlc
+ 342 00fd CA20     		orab	#32
+ 343 00ff 7B0000   		stab	_portdlc
+ 344              		stabs "Isr.h",132,0,0,Ltext11
+ 345              	
+ 346              	Ltext11	stabd 68,0,28
+ 347 0102 FD0000   		ldy	__9HC12Ictlr$theHC12Ictlr
+ 348              	
+ 349              	LBB15
+ 350              	LBB16	stabd 68,0,29
+ 351 0105 ED42     		ldy	2,y
+ 352 0107 ED4A     		ldy	10,y
+ 353 0109 270A     		beq	L68
+ 354              		
+ 355              		stabd 68,0,30
+ 356 010b EE44     		ldx	4,y
+ 357 010d B764     		tfr	y,d
+ 358 010f 15E30004 		jsr	[4,x]
+ 359 0113 2002     		bra	L73
+ 360              		
+ 361              		stabd 68,0,32
+ 362              	
+ 363 0115 20FE     	L68	bra	L68
+ 364              		
+ 365              	
+ 366              	LBE16	stabd 68,0,33
+ 367              	
+ 368              	L73
+ 369              	LBE15	stabs "hc12ictlr.cc",132,0,0,Ltext12
+ 370              	
+ 371              	Ltext12	stabd 68,0,53
+ 372 0117 F60000   		ldab	_portdlc
+ 373 011a C4DF     		andb	#223
+ 374 011c 7B0000   		stab	_portdlc
+ 375 011f 0B       		rti
+  54:hc12ictlr.cc  ****   makeVsr(isTof);
+ 376              		stabd 68,0,54
+ 377              				public	vsr6
+ 378              		
+ 379              	vsr6
+ 380 0120 F60000   		ldab	_portdlc
+ 381 0123 CA20     		orab	#32
+ 382 0125 7B0000   		stab	_portdlc
+ 383              		stabs "Isr.h",132,0,0,Ltext13
+ 384              	
+ 385              	Ltext13	stabd 68,0,28
+ 386 0128 FD0000   		ldy	__9HC12Ictlr$theHC12Ictlr
+ 387              	
+ 388              	LBB17
+ 389              	LBB18	stabd 68,0,29
+ 390 012b ED42     		ldy	2,y
+ 391 012d ED4C     		ldy	12,y
+ 392 012f 270A     		beq	L76
+ 393              		
+ 394              		stabd 68,0,30
+ 395 0131 EE44     		ldx	4,y
+ 396 0133 B764     		tfr	y,d
+ 397 0135 15E30004 		jsr	[4,x]
+ 398 0139 2002     		bra	L81
+ 399              		
+ 400              		stabd 68,0,32
+ 401              	
+ 402 013b 20FE     	L76	bra	L76
+ 403              		
+ 404              	
+ 405              	LBE18	stabd 68,0,33
+ 406              	
+ 407              	L81
+ 408              	LBE17	stabs "hc12ictlr.cc",132,0,0,Ltext14
+ 409              	
+ 410              	Ltext14	stabd 68,0,54
+ 411 013d F60000   		ldab	_portdlc
+ 412 0140 C4DF     		andb	#223
+ 413 0142 7B0000   		stab	_portdlc
+ 414 0145 0B       		rti
+  55:hc12ictlr.cc  ****   makeVsr(isTc7);
+ 415              		stabd 68,0,55
+ 416              				public	vsr7
+ 417              		
+ 418              	vsr7
+ 419 0146 F60000   		ldab	_portdlc
+ 420 0149 CA20     		orab	#32
+ 421 014b 7B0000   		stab	_portdlc
+ 422              		stabs "Isr.h",132,0,0,Ltext15
+ 423              	
+ 424              	Ltext15	stabd 68,0,28
+ 425 014e FD0000   		ldy	__9HC12Ictlr$theHC12Ictlr
+ 426              	
+ 427              	LBB19
+ 428              	LBB20	stabd 68,0,29
+ 429 0151 ED42     		ldy	2,y
+ 430 0153 ED4E     		ldy	14,y
+ 431 0155 270A     		beq	L84
+ 432              		
+ 433              		stabd 68,0,30
+ 434 0157 EE44     		ldx	4,y
+ 435 0159 B764     		tfr	y,d
+ 436 015b 15E30004 		jsr	[4,x]
+ 437 015f 2002     		bra	L89
+ 438              		
+ 439              		stabd 68,0,32
+ 440              	
+ 441 0161 20FE     	L84	bra	L84
+ 442              		
+ 443              	
+ 444              	LBE20	stabd 68,0,33
+ 445              	
+ 446              	L89
+ 447              	LBE19	stabs "hc12ictlr.cc",132,0,0,Ltext16
+ 448              	
+ 449              	Ltext16	stabd 68,0,55
+ 450 0163 F60000   		ldab	_portdlc
+ 451 0166 C4DF     		andb	#223
+ 452 0168 7B0000   		stab	_portdlc
+ 453 016b 0B       		rti
+  56:hc12ictlr.cc  ****   makeVsr(isTc6);
+ 454              		stabd 68,0,56
+ 455              				public	vsr8
+ 456              		
+ 457              	vsr8
+ 458 016c F60000   		ldab	_portdlc
+ 459 016f CA20     		orab	#32
+ 460 0171 7B0000   		stab	_portdlc
+ 461              		stabs "Isr.h",132,0,0,Ltext17
+ 462              	
+ 463              	Ltext17	stabd 68,0,28
+ 464 0174 FD0000   		ldy	__9HC12Ictlr$theHC12Ictlr
+ 465              	
+ 466              	LBB21
+ 467              	LBB22	stabd 68,0,29
+ 468 0177 ED42     		ldy	2,y
+ 469 0179 EDE810   		ldy	16,y
+ 470 017c 270A     		beq	L92
+ 471              		
+ 472              		stabd 68,0,30
+ 473 017e EE44     		ldx	4,y
+ 474 0180 B764     		tfr	y,d
+ 475 0182 15E30004 		jsr	[4,x]
+ 476 0186 2002     		bra	L97
+ 477              		
+ 478              		stabd 68,0,32
+ 479              	
+ 480 0188 20FE     	L92	bra	L92
+ 481              		
+ 482              	
+ 483              	LBE22	stabd 68,0,33
+ 484              	
+ 485              	L97
+ 486              	LBE21	stabs "hc12ictlr.cc",132,0,0,Ltext18
+ 487              	
+ 488              	Ltext18	stabd 68,0,56
+ 489 018a F60000   		ldab	_portdlc
+ 490 018d C4DF     		andb	#223
+ 491 018f 7B0000   		stab	_portdlc
+ 492 0192 0B       		rti
+  57:hc12ictlr.cc  ****   makeVsr(isTc5);
+ 493              		stabd 68,0,57
+ 494              				public	vsr9
+ 495              		
+ 496              	vsr9
+ 497 0193 F60000   		ldab	_portdlc
+ 498 0196 CA20     		orab	#32
+ 499 0198 7B0000   		stab	_portdlc
+ 500              		stabs "Isr.h",132,0,0,Ltext19
+ 501              	
+ 502              	Ltext19	stabd 68,0,28
+ 503 019b FD0000   		ldy	__9HC12Ictlr$theHC12Ictlr
+ 504              	
+ 505              	LBB23
+ 506              	LBB24	stabd 68,0,29
+ 507 019e ED42     		ldy	2,y
+ 508 01a0 EDE812   		ldy	18,y
+ 509 01a3 270A     		beq	L100
+ 510              		
+ 511              		stabd 68,0,30
+ 512 01a5 EE44     		ldx	4,y
+ 513 01a7 B764     		tfr	y,d
+ 514 01a9 15E30004 		jsr	[4,x]
+ 515 01ad 2002     		bra	L105
+ 516              		
+ 517              		stabd 68,0,32
+ 518              	
+ 519 01af 20FE     	L100	bra	L100
+ 520              		
+ 521              	
+ 522              	LBE24	stabd 68,0,33
+ 523              	
+ 524              	L105
+ 525              	LBE23	stabs "hc12ictlr.cc",132,0,0,Ltext20
+ 526              	
+ 527              	Ltext20	stabd 68,0,57
+ 528 01b1 F60000   		ldab	_portdlc
+ 529 01b4 C4DF     		andb	#223
+ 530 01b6 7B0000   		stab	_portdlc
+ 531 01b9 0B       		rti
+  58:hc12ictlr.cc  ****   makeVsr(isTc4);
+ 532              		stabd 68,0,58
+ 533              				public	vsr10
+ 534              		
+ 535              	vsr10
+ 536 01ba F60000   		ldab	_portdlc
+ 537 01bd CA20     		orab	#32
+ 538 01bf 7B0000   		stab	_portdlc
+ 539              		stabs "Isr.h",132,0,0,Ltext21
+ 540              	
+ 541              	Ltext21	stabd 68,0,28
+ 542 01c2 FD0000   		ldy	__9HC12Ictlr$theHC12Ictlr
+ 543              	
+ 544              	LBB25
+ 545              	LBB26	stabd 68,0,29
+ 546 01c5 ED42     		ldy	2,y
+ 547 01c7 EDE814   		ldy	20,y
+ 548 01ca 270A     		beq	L108
+ 549              		
+ 550              		stabd 68,0,30
+ 551 01cc EE44     		ldx	4,y
+ 552 01ce B764     		tfr	y,d
+ 553 01d0 15E30004 		jsr	[4,x]
+ 554 01d4 2002     		bra	L113
+ 555              		
+ 556              		stabd 68,0,32
+ 557              	
+ 558 01d6 20FE     	L108	bra	L108
+ 559              		
+ 560              	
+ 561              	LBE26	stabd 68,0,33
+ 562              	
+ 563              	L113
+ 564              	LBE25	stabs "hc12ictlr.cc",132,0,0,Ltext22
+ 565              	
+ 566              	Ltext22	stabd 68,0,58
+ 567 01d8 F60000   		ldab	_portdlc
+ 568 01db C4DF     		andb	#223
+ 569 01dd 7B0000   		stab	_portdlc
+ 570 01e0 0B       		rti
+  59:hc12ictlr.cc  ****   makeVsr(isTc3);
+ 571              		stabd 68,0,59
+ 572              				public	vsr11
+ 573              		
+ 574              	vsr11
+ 575 01e1 F60000   		ldab	_portdlc
+ 576 01e4 CA20     		orab	#32
+ 577 01e6 7B0000   		stab	_portdlc
+ 578              		stabs "Isr.h",132,0,0,Ltext23
+ 579              	
+ 580              	Ltext23	stabd 68,0,28
+ 581 01e9 FD0000   		ldy	__9HC12Ictlr$theHC12Ictlr
+ 582              	
+ 583              	LBB27
+ 584              	LBB28	stabd 68,0,29
+ 585 01ec ED42     		ldy	2,y
+ 586 01ee EDE816   		ldy	22,y
+ 587 01f1 270A     		beq	L116
+ 588              		
+ 589              		stabd 68,0,30
+ 590 01f3 EE44     		ldx	4,y
+ 591 01f5 B764     		tfr	y,d
+ 592 01f7 15E30004 		jsr	[4,x]
+ 593 01fb 2002     		bra	L121
+ 594              		
+ 595              		stabd 68,0,32
+ 596              	
+ 597 01fd 20FE     	L116	bra	L116
+ 598              		
+ 599              	
+ 600              	LBE28	stabd 68,0,33
+ 601              	
+ 602              	L121
+ 603              	LBE27	stabs "hc12ictlr.cc",132,0,0,Ltext24
+ 604              	
+ 605              	Ltext24	stabd 68,0,59
+ 606 01ff F60000   		ldab	_portdlc
+ 607 0202 C4DF     		andb	#223
+ 608 0204 7B0000   		stab	_portdlc
+ 609 0207 0B       		rti
+  60:hc12ictlr.cc  ****   makeVsr(isTc2);
+ 610              		stabd 68,0,60
+ 611              				public	vsr12
+ 612              		
+ 613              	vsr12
+ 614 0208 F60000   		ldab	_portdlc
+ 615 020b CA20     		orab	#32
+ 616 020d 7B0000   		stab	_portdlc
+ 617              		stabs "Isr.h",132,0,0,Ltext25
+ 618              	
+ 619              	Ltext25	stabd 68,0,28
+ 620 0210 FD0000   		ldy	__9HC12Ictlr$theHC12Ictlr
+ 621              	
+ 622              	LBB29
+ 623              	LBB30	stabd 68,0,29
+ 624 0213 ED42     		ldy	2,y
+ 625 0215 EDE818   		ldy	24,y
+ 626 0218 270A     		beq	L124
+ 627              		
+ 628              		stabd 68,0,30
+ 629 021a EE44     		ldx	4,y
+ 630 021c B764     		tfr	y,d
+ 631 021e 15E30004 		jsr	[4,x]
+ 632 0222 2002     		bra	L129
+ 633              		
+ 634              		stabd 68,0,32
+ 635              	
+ 636 0224 20FE     	L124	bra	L124
+ 637              		
+ 638              	
+ 639              	LBE30	stabd 68,0,33
+ 640              	
+ 641              	L129
+ 642              	LBE29	stabs "hc12ictlr.cc",132,0,0,Ltext26
+ 643              	
+ 644              	Ltext26	stabd 68,0,60
+ 645 0226 F60000   		ldab	_portdlc
+ 646 0229 C4DF     		andb	#223
+ 647 022b 7B0000   		stab	_portdlc
+ 648 022e 0B       		rti
+  61:hc12ictlr.cc  ****   makeVsr(isTc1);
+ 649              		stabd 68,0,61
+ 650              				public	vsr13
+ 651              		
+ 652              	vsr13
+ 653 022f F60000   		ldab	_portdlc
+ 654 0232 CA20     		orab	#32
+ 655 0234 7B0000   		stab	_portdlc
+ 656              		stabs "Isr.h",132,0,0,Ltext27
+ 657              	
+ 658              	Ltext27	stabd 68,0,28
+ 659 0237 FD0000   		ldy	__9HC12Ictlr$theHC12Ictlr
+ 660              	
+ 661              	LBB31
+ 662              	LBB32	stabd 68,0,29
+ 663 023a ED42     		ldy	2,y
+ 664 023c EDE81A   		ldy	26,y
+ 665 023f 270A     		beq	L132
+ 666              		
+ 667              		stabd 68,0,30
+ 668 0241 EE44     		ldx	4,y
+ 669 0243 B764     		tfr	y,d
+ 670 0245 15E30004 		jsr	[4,x]
+ 671 0249 2002     		bra	L137
+ 672              		
+ 673              		stabd 68,0,32
+ 674              	
+ 675 024b 20FE     	L132	bra	L132
+ 676              		
+ 677              	
+ 678              	LBE32	stabd 68,0,33
+ 679              	
+ 680              	L137
+ 681              	LBE31	stabs "hc12ictlr.cc",132,0,0,Ltext28
+ 682              	
+ 683              	Ltext28	stabd 68,0,61
+ 684 024d F60000   		ldab	_portdlc
+ 685 0250 C4DF     		andb	#223
+ 686 0252 7B0000   		stab	_portdlc
+ 687 0255 0B       		rti
+  62:hc12ictlr.cc  ****   makeVsr(isTc0);
+ 688              		stabd 68,0,62
+ 689              				public	vsr14
+ 690              		
+ 691              	vsr14
+ 692 0256 F60000   		ldab	_portdlc
+ 693 0259 CA20     		orab	#32
+ 694 025b 7B0000   		stab	_portdlc
+ 695              		stabs "Isr.h",132,0,0,Ltext29
+ 696              	
+ 697              	Ltext29	stabd 68,0,28
+ 698 025e FD0000   		ldy	__9HC12Ictlr$theHC12Ictlr
+ 699              	
+ 700              	LBB33
+ 701              	LBB34	stabd 68,0,29
+ 702 0261 ED42     		ldy	2,y
+ 703 0263 EDE81C   		ldy	28,y
+ 704 0266 270A     		beq	L140
+ 705              		
+ 706              		stabd 68,0,30
+ 707 0268 EE44     		ldx	4,y
+ 708 026a B764     		tfr	y,d
+ 709 026c 15E30004 		jsr	[4,x]
+ 710 0270 2002     		bra	L145
+ 711              		
+ 712              		stabd 68,0,32
+ 713              	
+ 714 0272 20FE     	L140	bra	L140
+ 715              		
+ 716              	
+ 717              	LBE34	stabd 68,0,33
+ 718              	
+ 719              	L145
+ 720              	LBE33	stabs "hc12ictlr.cc",132,0,0,Ltext30
+ 721              	
+ 722              	Ltext30	stabd 68,0,62
+ 723 0274 F60000   		ldab	_portdlc
+ 724 0277 C4DF     		andb	#223
+ 725 0279 7B0000   		stab	_portdlc
+ 726 027c 0B       		rti
+  63:hc12ictlr.cc  ****   makeVsr(isRti);
+ 727              		stabd 68,0,63
+ 728              				public	vsr15
+ 729              		
+ 730              	vsr15
+ 731 027d F60000   		ldab	_portdlc
+ 732 0280 CA20     		orab	#32
+ 733 0282 7B0000   		stab	_portdlc
+ 734              		stabs "Isr.h",132,0,0,Ltext31
+ 735              	
+ 736              	Ltext31	stabd 68,0,28
+ 737 0285 FD0000   		ldy	__9HC12Ictlr$theHC12Ictlr
+ 738              	
+ 739              	LBB35
+ 740              	LBB36	stabd 68,0,29
+ 741 0288 ED42     		ldy	2,y
+ 742 028a EDE81E   		ldy	30,y
+ 743 028d 270A     		beq	L148
+ 744              		
+ 745              		stabd 68,0,30
+ 746 028f EE44     		ldx	4,y
+ 747 0291 B764     		tfr	y,d
+ 748 0293 15E30004 		jsr	[4,x]
+ 749 0297 2002     		bra	L153
+ 750              		
+ 751              		stabd 68,0,32
+ 752              	
+ 753 0299 20FE     	L148	bra	L148
+ 754              		
+ 755              	
+ 756              	LBE36	stabd 68,0,33
+ 757              	
+ 758              	L153
+ 759              	LBE35	stabs "hc12ictlr.cc",132,0,0,Ltext32
+ 760              	
+ 761              	Ltext32	stabd 68,0,63
+ 762 029b F60000   		ldab	_portdlc
+ 763 029e C4DF     		andb	#223
+ 764 02a0 7B0000   		stab	_portdlc
+ 765 02a3 0B       		rti
+  64:hc12ictlr.cc  ****   makeVsr(isIrq);
+ 766              		stabd 68,0,64
+ 767              				public	vsr16
+ 768              		
+ 769              	vsr16
+ 770 02a4 F60000   		ldab	_portdlc
+ 771 02a7 CA20     		orab	#32
+ 772 02a9 7B0000   		stab	_portdlc
+ 773              		stabs "Isr.h",132,0,0,Ltext33
+ 774              	
+ 775              	Ltext33	stabd 68,0,28
+ 776 02ac FD0000   		ldy	__9HC12Ictlr$theHC12Ictlr
+ 777              	
+ 778              	LBB37
+ 779              	LBB38	stabd 68,0,29
+ 780 02af ED42     		ldy	2,y
+ 781 02b1 EDE820   		ldy	32,y
+ 782 02b4 270A     		beq	L156
+ 783              		
+ 784              		stabd 68,0,30
+ 785 02b6 EE44     		ldx	4,y
+ 786 02b8 B764     		tfr	y,d
+ 787 02ba 15E30004 		jsr	[4,x]
+ 788 02be 2002     		bra	L161
+ 789              		
+ 790              		stabd 68,0,32
+ 791              	
+ 792 02c0 20FE     	L156	bra	L156
+ 793              		
+ 794              	
+ 795              	LBE38	stabd 68,0,33
+ 796              	
+ 797              	L161
+ 798              	LBE37	stabs "hc12ictlr.cc",132,0,0,Ltext34
+ 799              	
+ 800              	Ltext34	stabd 68,0,64
+ 801 02c2 F60000   		ldab	_portdlc
+ 802 02c5 C4DF     		andb	#223
+ 803 02c7 7B0000   		stab	_portdlc
+ 804 02ca 0B       		rti
+ 805              	
+  65:hc12ictlr.cc  **** };
+ 806              	LBE4	stabd 68,0,65
+ 807              	
+ 808 02cb 3D       		rts
+ 809              	
+ 810              		stabs "handlerTable__9HC12Ictlr:F20",36,0,38,_handlerTable__9HC12Ictlr
+ 811              		stabn 192,0,0,LBB4
+ 812              		stabs "this:r60",64,0,48,1
+ 813              		stabn 192,0,0,LBB5
+ 814              		stabn 192,0,0,LBB6
+ 815              		stabn 224,0,0,LBE6
+ 816              		stabn 224,0,0,LBE5
+ 817              		stabs "this:r60",64,0,49,1
+ 818              		stabn 192,0,0,LBB7
+ 819              		stabn 192,0,0,LBB8
+ 820              		stabn 224,0,0,LBE8
+ 821              		stabn 224,0,0,LBE7
+ 822              		stabs "this:r60",64,0,50,1
+ 823              		stabn 192,0,0,LBB9
+ 824              		stabn 192,0,0,LBB10
+ 825              		stabn 224,0,0,LBE10
+ 826              		stabn 224,0,0,LBE9
+ 827              		stabs "this:r60",64,0,51,1
+ 828              		stabn 192,0,0,LBB11
+ 829              		stabn 192,0,0,LBB12
+ 830              		stabn 224,0,0,LBE12
+ 831              		stabn 224,0,0,LBE11
+ 832              		stabs "this:r60",64,0,52,1
+ 833              		stabn 192,0,0,LBB13
+ 834              		stabn 192,0,0,LBB14
+ 835              		stabn 224,0,0,LBE14
+ 836              		stabn 224,0,0,LBE13
+ 837              		stabs "this:r60",64,0,53,1
+ 838              		stabn 192,0,0,LBB15
+ 839              		stabn 192,0,0,LBB16
+ 840              		stabn 224,0,0,LBE16
+ 841              		stabn 224,0,0,LBE15
+ 842              		stabs "this:r60",64,0,54,1
+ 843              		stabn 192,0,0,LBB17
+ 844              		stabn 192,0,0,LBB18
+ 845              		stabn 224,0,0,LBE18
+ 846              		stabn 224,0,0,LBE17
+ 847              		stabs "this:r60",64,0,55,1
+ 848              		stabn 192,0,0,LBB19
+ 849              		stabn 192,0,0,LBB20
+ 850              		stabn 224,0,0,LBE20
+ 851              		stabn 224,0,0,LBE19
+ 852              		stabs "this:r60",64,0,56,1
+ 853              		stabn 192,0,0,LBB21
+ 854              		stabn 192,0,0,LBB22
+ 855              		stabn 224,0,0,LBE22
+ 856              		stabn 224,0,0,LBE21
+ 857              		stabs "this:r60",64,0,57,1
+ 858              		stabn 192,0,0,LBB23
+ 859              		stabn 192,0,0,LBB24
+ 860              		stabn 224,0,0,LBE24
+ 861              		stabn 224,0,0,LBE23
+ 862              		stabs "this:r60",64,0,58,1
+ 863              		stabn 192,0,0,LBB25
+ 864              		stabn 192,0,0,LBB26
+ 865              		stabn 224,0,0,LBE26
+ 866              		stabn 224,0,0,LBE25
+ 867              		stabs "this:r60",64,0,59,1
+ 868              		stabn 192,0,0,LBB27
+ 869              		stabn 192,0,0,LBB28
+ 870              		stabn 224,0,0,LBE28
+ 871              		stabn 224,0,0,LBE27
+ 872              		stabs "this:r60",64,0,60,1
+ 873              		stabn 192,0,0,LBB29
+ 874              		stabn 192,0,0,LBB30
+ 875              		stabn 224,0,0,LBE30
+ 876              		stabn 224,0,0,LBE29
+ 877              		stabs "this:r60",64,0,61,1
+ 878              		stabn 192,0,0,LBB31
+ 879              		stabn 192,0,0,LBB32
+ 880              		stabn 224,0,0,LBE32
+ 881              		stabn 224,0,0,LBE31
+ 882              		stabs "this:r60",64,0,62,1
+ 883              		stabn 192,0,0,LBB33
+ 884              		stabn 192,0,0,LBB34
+ 885              		stabn 224,0,0,LBE34
+ 886              		stabn 224,0,0,LBE33
+ 887              		stabs "this:r60",64,0,63,1
+ 888              		stabn 192,0,0,LBB35
+ 889              		stabn 192,0,0,LBB36
+ 890              		stabn 224,0,0,LBE36
+ 891              		stabn 224,0,0,LBE35
+ 892              		stabs "this:r60",64,0,64,1
+ 893              		stabn 192,0,0,LBB37
+ 894              		stabn 192,0,0,LBB38
+ 895              		stabn 224,0,0,LBE38
+ 896              		stabn 224,0,0,LBE37
+ 897              		stabn 224,0,0,LBE4
+ 898              	
+ 899              	Lscope2	stabs "",36,0,0,Lscope2-_handlerTable__9HC12Ictlr
+ 900              	
+ 901              		global	__9HC12Ictlr$theHC12Ictlr
+ 902              	
+ 903              		section	.data
+ 904              		stabs "_9HC12Ictlr$theHC12Ictlr:G67",32,0,14,0
+ 905              	__9HC12Ictlr$theHC12Ictlr
+ 906 0000 0000     		dcb.b	2,0
+ 907              	
+ 908              		global	___vt_9HC12Ictlr
+ 909              	
+ 910              		section	.const
+ 911              		stabs "__vt_9HC12Ictlr:G57",32,0,47,0
+ 912              	___vt_9HC12Ictlr
+ 913 0000 0000     		dc.w	0
+ 914 0002 0000     		dc.w	0
+ 915 0004 0023     		dc.w	__$_9HC12Ictlr
+ 916              	
+ 917              	
+ 918              		end
