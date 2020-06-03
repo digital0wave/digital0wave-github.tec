@@ -6,3 +6,13 @@ The lab hardware includes:
 • A power resistor (to simulate the laser’s waste heat) 
 • A thermoelectric cooler module • A temperature sensor 
 • A microprocessor controller(68HC12).
+
+![](doc/tec.jpg)
+
+
+## Repo 
+├── README.md # This file
+
+├── Doc    # specs
+
+└── Codes  # Source codes for the firmware
