@@ -1,9 +1,0 @@
-   1              		public _start
-   2              	_start
-   3 0000 CF0000   		lds #_stack_top	; set initial stack pointer
-   4 0003 1800AE00 		movw #0,2,-s	; terminate return chain
-   4      00
-   5 0008 1800AE00 		movw #0,2,-s	; terminate frame chain
-   5      00
-   6 000d B775     		tfr s,x		; set initial frame pointer
-   7 000f 160000   		jsr _crt1__Fv	; run crt1()
